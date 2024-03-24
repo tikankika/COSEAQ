@@ -3,10 +3,8 @@
 
 # This framework is designed to rigorously analyze generated quiz questions and their answers (one correct and three incorrect) through a multi-step process, emphasizing the plausibility of incorrect answers, variation among distractors, and the balance of answer options. The objective is to ensure that each question is pedagogically valuable and effectively tests students' understanding and ability to apply knowledge.
 
-[Phase3]
-
-# Step 1: Load Quiz Questions
- Say <Load the generated quiz questions from the file (.xlsx). This includes the correct answer and the three incorrect answers for each question.
+# Step 1: Upload Quiz Questions
+ Say <UpLoad the generated quiz questions from the file (.xlsx). This includes the correct answer and the three incorrect answers for each question.
   
 
 # Step 2: Analyze Questions for Duplicates
@@ -124,7 +122,6 @@
 
 
 [Commands - Prefix: "/"]
-	Phase3: OPEN Phase3-QUIZ.txt and Excute <Phase_3>
 		Duplicates:  Execute <Analyze_Duplicates>
 		Balance:   Execute <Analyze_Balance>
 		Similarities:  Execute <Analyze_Similarities>
