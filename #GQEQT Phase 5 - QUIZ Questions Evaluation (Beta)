@@ -1,0 +1,133 @@
+#GQEQT Phase 5 - QUIZ Questions Evaluation (Beta)
+
+
+# This framework is designed to rigorously analyze generated quiz questions and their answers (one correct and three incorrect) through a multi-step process, emphasizing the plausibility of incorrect answers, variation among distractors, and the balance of answer options. The objective is to ensure that each question is pedagogically valuable and effectively tests students' understanding and ability to apply knowledge.
+
+[Phase3]
+
+# Step 1: Load Quiz Questions
+ Say <Load the generated quiz questions from the file (.xlsx). This includes the correct answer and the three incorrect answers for each question.
+  
+
+# Step 2: Analyze Questions for Duplicates
+[Analyze_Duplicates]
+      Use text similarity algorithms to identify exact duplicates and closely related questions within the quiz set. Flag and print out any duplicates for review.
+      <Analysera detta dokument! Finns det dubbletter av frågor? Fousera på "QuestionText"> 
+
+# Step 3: Check Balance of Answer Options
+[Check_Balance]
+  Review the length and detail of all answer options to ensure no option stands out as more or less likely based on its presentation, maintaining a balanced set of options for each question.
+
+
+# Step 4: Analyze Questions for Similarities
+[Analyze_Similarities]
+      Finns det frågor som är snarlika?
+      Employ semantic analysis to find questions that are not exact duplicates but share a high degree of similarity in terms of content or structure. Highlight these for potential revision.
+
+     
+          KOD -- fungerar
+          # Gör en djupgående jämförelse av semantisk likhet mellan frågorna -  finns det frågor med semantisk likhet?
+          # Attempt to correct and simplify the approach to find semantically similar questions
+          
+          # We'll filter out the diagonal and upper triangle of the similarity matrix to avoid duplicate pairs and self comparisons
+          np.fill_diagonal(cosine_sim_matrix, 0)
+          similar_question_indices = np.argwhere(cosine_sim_matrix > threshold)
+          
+          # Extracting the pairs and their similarity scores in a simplified manner
+          simplified_similar_question_pairs = [(question_texts[i], question_texts[j], cosine_sim_matrix[i, j]) 
+                                               for i, j in similar_question_indices if i < j]
+          
+          len(simplified_similar_question_pairs), simplified_similar_question_pairs[:5]  # Display the count and first 5 pairs
+          
+
+
+#Step 5: Evaluate Plausibility of Incorrect Answers
+
+[Analyze_Plausibility]
+        FÖLJANDE FUNGERAR
+        # Gör följande - detta har du skrivit tidigare
+              För att analysera plausibiliteten av felsvaren i dokumentet, kommer jag att genomgå varje fråga och utvärdera om felsvaren verkar tillräckligt plausibla och utmanande baserat på de data vi har tillgängliga. Denna analys syftar till att identifiera de felsvar som kanske är för uppenbart felaktiga eller inte tillräckligt genomtänkta för att ge en utmaning i lärandeprocessen.
+                    1. Relevans: Är felsvaren relevanta för ämnesområdet?
+                    2. Plausibilitet: Är felsvaren rimliga nog för att vara misstänkta som korrekta svar för en person med begränsad kunskap i ämnet?
+        
+        KOD  Detta verkar fungera
+        ta fram de 10 frågor där detta är störst problem
+        # Analyzing the plausibility and relevance of incorrect answers for all questions
+        
+        # Function to analyze options
+        def analyze_options(data):
+            results = []
+            for index, row in data.iterrows():
+                correct_option = row[['OptionText', 'IsCorrect', 'OptionText.1', 'IsCorrect.1', 'OptionText.2', 'IsCorrect.2', 'OptionText.3', 'IsCorrect.3']]
+                question = row['QuestionText']
+                correct_answer = correct_option[correct_option.index[correct_option == 1][0]]
+                incorrect_answers = [correct_option[i] for i in correct_option.index[correct_option == 0]]
+                
+                # Analysis placeholder - actual analysis requires domain knowledge
+                analysis_result = {
+                    "Question": question,
+                    "Correct Answer": correct_answer,
+                    "Incorrect Answers": incorrect_answers,
+                    # Placeholder for relevancy and plausibility analysis
+                    "Analysis": "Relevancy and plausibility analysis would be applied here."
+                }
+                results.append(analysis_result)
+            return results
+        
+        
+          For each question, assess the incorrect answers for their plausibility:
+            - Incorrect answers should be plausible enough to challenge a student's understanding without being obviously wrong.
+            - Utilize domain expertise to ensure that incorrect answers reflect common misconceptions or errors.
+        
+        Plausibilitet av felsvar: Felsvar bör vara tillräckligt plausibla för att utmana studenternas förståelse. Om ett felsvar är uppenbart felaktigt (t.ex., "Vad är huvudingrediensen i bröd?" med ett felsvar som "Plast") är det för enkelt och bidrar inte till lärande
+        
+        
+        KOD 
+        # Analyzing plausibility of incorrect answers based on provided data
+        
+        # We will examine the options for each question and categorize them based on their plausibility.
+        # This involves checking if the incorrect options ('IsCorrect' columns with value 0) are plausible distractors.
+        
+        # Extracting question texts and their options
+        question_options = df[['QuestionText', 'OptionText', 'IsCorrect', 'OptionText.1', 'IsCorrect.1', 'OptionText.2', 'IsCorrect.2', 'OptionText.3', 'IsCorrect.3']]
+        
+        # Function to assess plausibility of incorrect answers
+        def assess_plausibility(row):
+            implausible_options = []
+            for i in range(4):  # Four options per question
+                option_text = row[f'OptionText.{i}' if i > 0 else 'OptionText']
+                is_correct = row[f'IsCorrect.{i}' if i > 0 else 'IsCorrect']
+                if is_correct == 0:  # If the option is incorrect
+                    # Simple heuristic to determine plausibility (for demonstration, assumes longer options might be more thought out)
+                    if len(option_text) < 20:  # Arbitrary length check for simplicity
+                        implausible_options.append(option_text)
+            return implausible_options
+        
+        # Apply the function to each row/question
+        question_options['ImplausibleOptions'] = question_options.apply(assess_plausibility, axis=1)
+        
+        # Filter questions with implausible incorrect answers
+        implausible_questions = question_options[question_options['ImplausibleOptions'].apply(len) > 0][['QuestionText', 'ImplausibleOptions']]
+        
+        len(implausible_questions), implausible_questions.head()  
+        
+
+# Step 6: Assess Variation in Distractors
+[Assess_Distractors]
+  Analyze the variety among distractors for each question to ensure they cover a range of common misunderstandings or related concepts, enhancing the depth of knowledge being tested.
+  Fousera på "QuestionText" 
+
+
+# Step 7: Report Findings and Recommendations
+[Report_Findings]
+  Compile findings from the analysis, including any identified duplicates or similarities, evaluations of plausibility, variation, and balance. Provide specific recommendations for improving the quiz questions based on this analysis.
+
+
+[Commands - Prefix: "/"]
+	Phase3: OPEN Phase3-QUIZ.txt and Excute <Phase_3>
+		Duplicates:  Execute <Analyze_Duplicates>
+		Balance:   Execute <Analyze_Balance>
+		Similarities:  Execute <Analyze_Similarities>
+		Plausibility:  Execute <Analyze_Plausibility>
+		Distractors:  Execute <Assess_Distractors>
+		Report_Findings: Execute <Report_Findings>
