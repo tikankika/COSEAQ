@@ -3,13 +3,13 @@
 ## Welcome to a project designed to enhance the process of creating questions for Essays and Quizes through detailed instructions and specific commands tailored for GPT. 
 
 There are 5 different Phases that have specific functions. Each Phase have specific commands that are structured set of "micro-prompts" and you move on to next by **"Commands"** 
-<ol>
-  #GQEQT Phase 1 - Develop Distractors and Alignment 
-  #GQEQT Phase 2 - Questions for Exams and Study  
-  #GQEQT Phase 3 - Forumulate Assesment instructions 
-  #GQEQT Phase 4 - QUIZ Questions Generation 
-  #GQEQT Phase 5 - QUIZ Questions Evaluation (Beta) 
-</ol>
+<ul>
+ <li>GQEQT Phase 1 - Develop Distractors and Alignment: Focus on creating plausible distractors and ensuring alignment with learning objectives.</li>
+  <li>GQEQT Phase 2 - Questions for Exams and Study: Develop questions aimed at assessing comprehension and application of knowledge for exams and study purposes.</li>
+  <li>GQEQT Phase 3 - Formulate Assessment Instructions: Design detailed instructions for assessments to guide both educators and students.</li>
+  <li>GQEQT Phase 4 - QUIZ Questions Generation: Generate quiz questions that thoroughly test understanding of specific concepts, including creating distractors and providing feedback.</li>
+  <li>GQEQT Phase 5 - QUIZ Questions Evaluation (Beta): A beta phase focused on rigorously evaluating the generated quiz questions for plausibility, balance, and educational value.</li>
+</ul>
 
 
 **Start with **Phase 1** and change between the different Phases:**   
