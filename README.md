@@ -2,8 +2,8 @@
 
 ## Welcome to a project designed to enhance the process of creating questions for Essays and Quizes through detailed instructions and specific commands tailored for GPT. 
 
-There are 5 different Phases that have specific functions. Start with **Phase 1** and change between the different Phases  
-![image](https://github.com/tikankika/Generate-Questions-for-Essay-and-Quiz---Theoretical-approach/assets/163601082/365b9a7a-5959-4964-bf6a-bf83a27db62a)
+There are 5 different Phases that have specific functions. Start with **Phase 1** and change between the different Phases:   
+<br>![image](https://github.com/tikankika/Generate-Questions-for-Essay-and-Quiz---Theoretical-approach/assets/163601082/365b9a7a-5959-4964-bf6a-bf83a27db62a) </br>
 
 Each Phase have specific commands that are structured set of "micro-prompts" and you move on to next by **"Commands"** 
 <ol>
