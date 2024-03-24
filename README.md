@@ -17,14 +17,14 @@ There are 5 different Phases that have specific functions. Each Phase have speci
 
 
 
-## Welcome to a project designed to enhance the process of creating educational quizzes through detailed instructions and specific commands tailored for GPT. This initiative started with the idea of utilizing hybrid code or pseudocode but has evolved into a more structured set of "micro-prompts". The process of creating an educational quiz involves three key phases: Preparation, Question Creation, and Output Analysis (BETA).
 
-### "Brief information
+## Brief information / Quickstart!
 
-Phase 2: The core of this guide is dedicated to the creation of quiz questions, providing a systematic approach to crafting both questions and answers for a more effective learning experience.
-Beta Evaluation in Phase 3: This phase is in beta, aiming to evaluate the quality of the generated quiz questions. While showing promise, it's an area where further improvements are being explored.
+**Phase 1** Focuses on analyzing the concept i textbooks to pinpointing misconceptions, and aligning with the curriculum to establish clear assessment goals. The focus is on Misconception Identification, alongside ensuring Curriculum Alignment.
+<br> **Upload:** Textbook, curriculum and choose one or a few concepts... <br/> 
+### Commands: 
+<br>  <br/> Textbook, curriculum and choose one or a few concepts... <br/> 
 
-**Phase 1** focuses on analyzing textbooks to pinpointing misconceptions, and aligning with the curriculum to establish clear assessment goals. The focus is on Misconception Identification, alongside ensuring Curriculum Alignment.
 
 **Phase 2** involves creating the actual quiz questions. This phase is about leveraging the insights gained from Phase 1 to develop questions that are pedagogically valuable and effectively assess students' understanding and application of knowledge.
 
