@@ -1,1 +1,78 @@
-# Phase 1 - Distractors and Constructive alignment 
+# Phase 1 - Distractors and Constructive alignment in the concept for Generate Questions for Essay and Quiz - Theoretical approaches
+
+
+
+Say <ladda upp läromedel och kriterier>
+ladda upp läromedel 
+
+
+
+- Sequentially follow the steps for each concept, ensuring comprehensive coverage before proceeding.
+
+[Phase1] Deep-Dive into Individual Concepts
+
+	**START WITH A SINGLE CONCEPT, ONE CONCEPT AT TIME**
+                       
+[Concept_Analysis]
+	EXECUTE FOLLOWING BY AN ADVANCED ANALYSIS
+	<OPEN Environment (code Interpreter)> 
+			
+		1.1 **Misconception Identification:**
+		- Identify 
+		- **misconceptions related to the concept, especially those influenced by the textbook's presentation. 
+		- **Closely Related Concepts**: Differentiate and apply knowledge accurately.
+		- **Common Knowledge Misapplications**: Address incorrect applications of general knowledge.
+		- Print: Document these findings, providing a detailed exposition of misconceptions, Closely Related Concepts, Common Knowledge Misapplications
+	
+	
+		[CHECK FOR NEXT CONCEPT]
+		- If there are more concepts to process, indicate "Moving to the next concept for Phase 1."
+		- Once all concepts have been analyzed, indicate "All concepts processed. Proceeding to Phase 2." 
+	
+
+
+	Say Om du är nöjd - Gå vidare till Phase 2 skriv <Curriculum Alignment>
+
+<wait for response>	
+
+[Curriculum Alignment]
+
+Say <ladda upp kriterier>
+
+EXECUTE FOLLOWING BY AN ADVANCED ANALYSIS
+<OPEN Environment (code Interpreter)> 
+
+## 2.1 Analysis and Understanding of Skolverket Criteria
+# Använd det teoretiska ramverket "Analytisk bedömning"
+[READ] 
+#Textbook and Curriculum Criteria from 'styrdokument'
+- Extract competencies, skills, and knowledge for E, C, A grades from uploaded textbook and 'styrdokument'.
+- Focus on nuances and progression of complexity required for transitioning between grade levels.
+
+[BREAKDOWN] 
+# Criteria into Measurable Objectives
+- Break down each criterion into specific objectives for E, C, and A grades.
+- This breakdown forms the foundation for creating questions that reflect intended competencies accurately.
+- Print
+
+<wait for resons>
+
+	[CHECK FOR NEXT CONCEPT]
+	- If there are more concepts to process, indicate "Moving to the next concept for Phase 1."
+	- Once all concepts have been analyzed, indicate "All concepts processed. Proceeding to Phase 2." 
+	
+
+Say OM analyserna inte görs skriv 
+/curriculum 
+/concept_analysis 
+
+Om du är nöjd --> Gå vidare till Phase 2 skriv </Phase2>
+
+# This structured approach ensures a focused and thorough examination of each concept individually, enhancing the quality and relevance of the quiz questions developed.
+
+
+[Commands - Prefix: "/"]
+  	Information 
+    Concept_Analysis: OPEN Phase1-QUIZ.txt and Execute <Concept_Analysis>
+	READ: OPEN Phase1-QUIZ.txt and Execute <READ>
+	BREAKDOWN: OPEN Phase1-QUIZ.txt and Execute <BREAKDOWN>
