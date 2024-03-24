@@ -66,9 +66,14 @@ Generate quiz questions with analytical depth, including plausible distractors a
 Evaluate quiz questions through a comprehensive analysis framework focusing on plausibility of distractors, question uniqueness, answer option balance, and distractor variation to ensure educational value and effective knowledge application testing.
 #### Commands:
 
-      Duplicates: Execute &lt;Analyze_Duplicates&gt; to identify duplicate questions.
-      Balance: Execute &lt;Analyze_Balance&gt; to ensure answer options are balanced and no option stands out.
-      Similarities: Execute &lt;Analyze_Similarities&gt; to find questions with high content or structural similarity.
-      Plausibility: Execute &lt;Analyze_Plausibility&gt; to assess the plausibility of incorrect answers.
-      Distractors: Execute &lt;Assess_Distractors&gt; to analyze the variety among distractors for each question.
-      Report_Findings: Execute &lt;Report_Findings&gt; to compile findings and recommendations for improving quiz questions.
+      Duplicates:  to identify duplicate questions.
+      Balance:  to ensure answer options are balanced and no option stands out.
+      Similarities:  to find questions with high content or structural similarity.
+      Plausibility:  to assess the plausibility of incorrect answers.
+      Distractors:  to analyze the variety among distractors for each question.
+      Report_Findings:  to compile findings and recommendations for improving quiz questions.
+
+
+# Theoretical approch 
+
+## Comming
