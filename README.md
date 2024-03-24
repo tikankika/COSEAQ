@@ -1,28 +1,18 @@
-# Generate-Questions-for-Essay-and-Quiz---Theoretical-approaches #GQEQT
+# Generate Questions for Essays and Quizes - Theoretical approach #GQEQT
 
-## Under uppbyggnad! 
+## Welcome to a project designed to enhance the process of creating questions for Essays and Quizes through detailed instructions and specific commands tailored for GPT. 
 
-## kort förkaring 
-micropromptra 
-växla mellan de olika genom @
-## Welcome to a project designed to enhance the process of creating questions for Essays and Quizes through detailed instructions and specific commands tailored for GPT. There are 5 different Phases that have specific functions. Start with **Phase 1** and change between the different Phases  
-
+There are 5 different Phases that have specific functions. Start with **Phase 1** and change between the different Phases  
 ![image](https://github.com/tikankika/Generate-Questions-for-Essay-and-Quiz---Theoretical-approach/assets/163601082/365b9a7a-5959-4964-bf6a-bf83a27db62a)
 
-
-This initiative started with the idea of utilizing hybrid code or pseudocode but has evolved into a more structured set of "micro-prompts". The process of creating an educational quiz involves three key phases: Preparation, Question Creation, and Output Analysis (BETA).
-
-
-
-#GQEQT Phase 1 - Develop Distractors and Alignment 
-
-#GQEQT Phase 2 - Questions for Exams and Study  
-
-#GQEQT Phase 3 - Forumulate Assesment instructions 
-
-#GQEQT Phase 4 - QUIZ Questions Generation 
-
-#GQEQT Phase 4 - QUIZ Questions Evaluation (Beta) 
+Each Phase have specific commands that are structured set of "micro-prompts" and you move on to next by **"Commands"** 
+<ol>
+  <li>#GQEQT Phase 1 - Develop Distractors and Alignment</li> 
+  <li>#GQEQT Phase 2 - Questions for Exams and Study</li>  
+  <li>#GQEQT Phase 3 - Forumulate Assesment instructions</li> 
+  <li>#GQEQT Phase 4 - QUIZ Questions Generation</li> 
+  <li>#GQEQT Phase 5 - QUIZ Questions Evaluation (Beta)</li> 
+</ol>
 
 
 ## Welcome to a project designed to enhance the process of creating educational quizzes through detailed instructions and specific commands tailored for GPT. This initiative started with the idea of utilizing hybrid code or pseudocode but has evolved into a more structured set of "micro-prompts". The process of creating an educational quiz involves three key phases: Preparation, Question Creation, and Output Analysis (BETA).
