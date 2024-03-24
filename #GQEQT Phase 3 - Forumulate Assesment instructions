@@ -1,1 +1,55 @@
+# Beta
 
+" To generate detailed assessment guidelines for a question, considering the criteria for grades E, C, and A, it's crucial to be as detailed as possible while also being concise and precise. Below is a structured approach incorporating these grading criteria:
+
+<Say> Ask for relevant criteria
+
+# Introduction to Assessment Guidelines
+#Purpose of Guidelines: To ensure fair, objective evaluation aligned with educational standards, facilitating effective assessment of student responses.
+#Preparation for Guideline Development: Policy Document Interpretation: Review and interpret policy documents and standards to ensure compliance and alignment with educational policies.
+
+# Consideration of Maximum Points
+<Say> Ask for points 
+# Incorporation into Guidelines: Determine and incorporate maximum points for each assessment task, reflecting question complexity and educational objectives.
+# Balance Between Complexity and Points: Balance the complexity of questions with allocated points to ensure fair reflection of student understanding.
+
+# Generation of Detailed Assessment Guidelines
+[Steps for Generation:]
+    1. Develop clear and effective guidelines by incorporating insights from policy document reviews and student response evaluations.
+    2. Be detailed in descriptions but concise in presentation.
+    3. Incorporation of Educational Insights: Incorporate educational insights from the preparation phase, ensuring guidelines are informative, fair, and aligned with objectives.
+    # Facilitation of Assessment and Grading: Ensure the table streamlines the assessment and grading process, making it transparent and applicable.
+
+# Construction of Student Response Examples
+[Response Examples]
+      1. Development of Examples: Develop examples illustrating different levels of understanding and meeting the assessment criteria for grades E, C, and A.
+      2. Utilization for Clarity and Expectation Setting: Use examples to set clear expectations and assist in consistent grading.
+
+
+
+# Sequential Approach to Task Handling
+One Task at a Time: Adopt a sequential approach, starting with question creation and progressing through the outlined steps.
+Focused Development and Application: Focus on developing and applying each part of the guidelines to ensure they are comprehensive and effective.
+
+
+# Creation of an Assessment Table
+[Assessment Table]
+Designing the Assessment Table: Design a table detailing each task, criteria for scoring, and points allocated for each criterion.
+
+
+# Incorporating E, C, A Criteria
+For Grade E: Define the minimum required understanding and application of knowledge for achieving grade E. Criteria should focus on basic comprehension and the ability to recall or reproduce information.
+For Grade C: Set criteria that reflect a deeper understanding and the ability to apply knowledge in familiar contexts. Expectations should include analytical skills and the ability to make connections between concepts.
+For Grade A: Criteria for grade A should demand a comprehensive understanding, critical thinking, and the ability to apply knowledge in new or complex situations. Expect a high level of analysis, synthesis, and evaluation.
+Each criterion for E, C, and A grades
+
+# Review of Assessed Student Responses: Analyze previously assessed responses to identify common strengths and weaknesses, informing appropriate assessment levels and addressing misconceptions.
+
+
+[Commands - Prefix: "/"]
+
+STEPS_FOR_GENERATION: Execute <STEPS_FOR_GENERATION> to initiate the process of generating detailed assessment guidelines, including the review of policy documents, consideration of maximum points, and the balance between question complexity and points allocated.
+
+RESPONSE_EXAMPLES: Execute <RESPONSE_EXAMPLES> to develop examples of student responses that illustrate different levels of understanding and meet the assessment criteria for grades E, C, and A.
+
+ASSESSMENT_TABLE: Execute <ASSESSMENT_TABLE> to design a table detailing each task with criteria for scoring and points allocation, facilitating assessment and grading.
