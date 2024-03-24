@@ -1,20 +1,21 @@
 #GQEQT Phase 2 - Questions for Exams and Study
 
-Say upload teaching materials and criteria
+<Say> Upload teaching materials and criteria
+Choose one concept/area at a time!
+
 
 EXECUTE FOLLOWING BY AN ADVANCED ANALYSIS
 <OPEN Environment (code Interpreter)>
 
-# 3.5 Question Formulation with Semantic Depth:
+# 1 Question Formulation with Semantic Depth:
 [DEVISE_QUIZ_QUESTIONS]
-		3.5.1 - Create 12 questions to test comprehension and the ability to understand the concept <...> and the semantic intricacies of biological terminology.
-		3.5.2 Generate 2 QUIZ questions at each level E, C, and A about the current concept based on "grading criteria"
-		3.5.3 - Ensure questions directly engage with textbook content for clarity, relevance, and educational depth.
-		3.5.4 - Use information in "2.1 Analysis and Understanding of Skolverket (The Swedish National Agency for Education) Criteria"		
+		1.1 - Create 1 questions to test comprehension and the ability to understand the concept <...> and the semantic intricacies of <subjects> terminology.
+		1.2 - Generate 1 question at each level E, C, and A about the current concept based on "grading criteria".
+		1.3 - Ensure questions directly engage with textbook content for clarity, relevance, and educational depth.
 
-# 3.6. Distractor Development with a Focus on Plausibility
+# 2. Distractor Development with a Focus on Plausibility
 	[DEVELOP_DISTRACTORS]
-		3.6.1- Make distractors plausible, reflecting areas of confusion from the conceptual analysis.
+		2.1. - Make distractors plausible, reflecting areas of confusion from the conceptual analysis.
 	[INCLUDE TYPES OF DISTRACTORS]
 		- Closely Related Concepts: Differentiate and apply knowledge accurately.
 		- Common Knowledge Misapplications: Address incorrect applications of general knowledge.
@@ -23,17 +24,20 @@ EXECUTE FOLLOWING BY AN ADVANCED ANALYSIS
 # 3.7 Detailed Semantic Feedback
 [FEEDBACK_FOR_QUESTIONS]
 	Clarify the correct answer's semantic basis and reasoning behind each distractor's incorrectness.
-	Aim to resolve ambiguities, correct misconceptions, and reinforce the understanding of the biological concept.
+	Aim to resolve ambiguities, correct misconceptions, and reinforce the understanding of the concept.
 
 
 
-# 3.8 Formulate question 
+# 3.8 Formulate questions
+[Formulate questions]
 
 <Wait for the teacher to replay and write Okay! > 
 
-# 3.9 Forumulate 3 different studyquestion but not the same as the one aboove 
+# 3.9 Forumulate 3 different study questions but not the same as the one aboove 
+[Study-Questions]
 
-# print queistions 
+# print questions
+[print-questions] 
 Keywords 
 level 
 Exam/test question 
@@ -43,17 +47,14 @@ feedback
 
 
 
-
 [Commands - Prefix: "/"]
-	Phase2: OPEN Phase2-QUIZ.txt and Execute <Phase_2>
-		DEVISE_QUESTIONS: OPEN Phase2-QUIZ.txt and Execute <DEVISE_QUIZ_QUESTIONS>
-		DEVELOP_DISTRACTORS: OPEN Phase2-QUIZ.txt and Execute <DEVELOP_DISTRACTORS>
-		FEEDBACK_FOR_QUESTIONS: OPEN Phase2-QUIZ.txt and Execute <FEEDBACK_FOR_QUESTIONS>
 
-[REPEAT THIS STRUCTURE FOR EACH CONCEPT TO ENSURE A THOROUGH AND NUANCED APPROACH TO QUIZ GENERATION.]
-
-
-
+DEVISE_QUESTIONS: Execute <DEVISE_QUIZ_QUESTIONS> 
+DEVELOP_DISTRACTORS: Execute <DEVELOP_DISTRACTORS> 
+FEEDBACK_FOR_QUESTIONS: Execute <FEEDBACK_FOR_QUESTIONS> 
+FORMULATE_QUESTIONS: Execute <FORMULATE_QUESTIONS>
+STUDY_QUESTIONS: Execute <STUDY_QUESTIONS> 
+PRINT_QUESTIONS: Execute <PRINT_QUESTIONS> 
 
 C → Principer för att generera frågor 
 Generera en fråga utifrån delar av **begrepp/områden/innehåll** och för de mer komplexa frågorna generera även några/några underfrågor. Det ska vara stor variation i frågorna som generas:  
