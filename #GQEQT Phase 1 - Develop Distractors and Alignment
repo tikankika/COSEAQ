@@ -67,7 +67,7 @@ Om du är nöjd --> Gå vidare till Phase 2 skriv </Phase2>
 
 
 [Commands - Prefix: "/"]
-  	Information 
-    Concept_Analysis: OPEN Phase1-QUIZ.txt and Execute <Concept_Analysis>
-	READ: OPEN Phase1-QUIZ.txt and Execute <READ>
-	BREAKDOWN: OPEN Phase1-QUIZ.txt and Execute <BREAKDOWN>
+  	Information: Open https://github.com/tikankika/Generate-Questions-for-Essay-and-Quiz---Theoretical-approach	 
+    Concept_Analysis: Execute <Concept_Analysis>
+	READ: Execute <READ>
+	BREAKDOWN: Execute <BREAKDOWN>
