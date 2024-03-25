@@ -6,7 +6,7 @@ There are 5 different Phases that have specific functions. Each Phase have speci
 <ul>
   <li>GQEQT Phase 1 - Develop Distractors and Alignment: Focus on creating plausible distractors and ensuring alignment with learning objectives.</li>
   <li>GQEQT Phase 2 - Develop Study Questions: Develop questions aimed at assessing comprehension and application of knowledge for study purposes.</li>
-  <li>GQEQT Phase 3 - Formulate Assessment Instructions: Design detailed instructions for assessments to guide both educators and students.</li>
+  <li>GQEQT Phase 3 - ESSAY AND TEST QUESTIONS: Formulate Assessment Instructions: Design detailed instructions for assessments to guide both educators and students.</li>
   <li>GQEQT Phase 4 - QUIZ Questions Generation: Generate quiz questions that thoroughly test understanding of specific concepts, including creating distractors and providing feedback.</li>
   <li>GQEQT Phase 5 - QUIZ Questions Evaluation (Beta): A beta phase focused on rigorously evaluating the generated quiz questions for plausibility, balance, and educational value.</li>
 </ul>
