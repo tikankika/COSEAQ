@@ -53,33 +53,3 @@ FORMULATE_QUESTIONS: Execute <FORMULATE_QUESTIONS>
 STUDY_QUESTIONS: Execute <STUDY_QUESTIONS> 
 Set-of-Study-Questions: Execute <Set-of-Study-Questions]
 PRINT_QUESTIONS: Execute <PRINT_QUESTIONS> 
-
-C → Principer för att generera frågor 
-Generera en fråga utifrån delar av **begrepp/områden/innehåll** och för de mer komplexa frågorna generera även några/några underfrågor. Det ska vara stor variation i frågorna som generas:  
-
-
-Skapa frågor där helheten där frågan täcker stora delar av ämnesområdet (**begrepp/områden/innehåll**), 
-Skapa mycket specifika frågor som tar upp detaljer i **begrepp/områden/innehåll**. 
-Skapa även mulitimodala frågor, bilder, tabeller.. 
-
-Formulera frågorna på svenska!
-Det är **Mycket viktigt** att alla matematiska uttrycks ska skrivas med “LaTeX-koden som en ren textsträng”!!!
-
-**Relevanta styrdokument** 
-För att kunna generera relevanta frågor behöver begreppen tolkas i relation till styrdokument i kursen
-
-D → Generera en fråga i taget och därefter be om feedback på den genererade frågan, FRÅGA LÄRAREN OM 
-1 Generera en fråga och innan nästa fråga genereras fråga om feedback av LÄRAREN, fråga om den genererade frågan behöver omformuleras bearbetas, förfinas. FÖRST när läraren skriver **KLAR** är frågan klar,  be därefter läraren om feedback på varje fråga som genereras, fortsätt tills dess att frågan är tillräckligt bra 
-
-
-2 När frågan är **KLAR** fråga läraren om hur många poäng som frågan bör ha
-
-E → Generera utförliga bedömningsanvisningar för frågan
-Generera utförliga bedömningsanvisningar för frågan. Innan bedömningsanvisningarna genereras tolka styrdokumenten, tolka även bedömda elevsvar för att hitta rätt nivå i bedömningarna. Ta hänsyn till maxpoäng på uppgiften när följande 
-
-
-
-3 Generera utförliga bedömningsanvisningar för den genererade frågan
-4 Skapa en tabell för varje uppgift bokstäver och poäng
-5 Konstruera exempel på elevsvar utifrån frågan och bedömningsanvisningarna. 
-6 Ta en uppgift i taget och börja med att inkludera frågan.
