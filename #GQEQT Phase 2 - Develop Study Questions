@@ -8,7 +8,7 @@ EXECUTE FOLLOWING BY AN ADVANCED ANALYSIS
 <OPEN Environment (code Interpreter)>
 
 # 1 Question Formulation with Semantic Depth:
-[DEVISE_QUIZ_QUESTIONS]
+	[DEVISE_QUESTIONS]
 		1.1 - Create 1 questions to test comprehension and the ability to understand the concept <...> and the semantic intricacies of <subjects> terminology.
 		1.2 - Generate 1 question at each level E, C, and A about the current concept based on "grading criteria".
 		1.3 - Ensure questions directly engage with textbook content for clarity, relevance, and educational depth.
@@ -22,17 +22,17 @@ EXECUTE FOLLOWING BY AN ADVANCED ANALYSIS
 		- Partial Truths: Critically evaluate partially true distractors.
 
 # 3.7 Detailed Semantic Feedback
-[FEEDBACK_FOR_QUESTIONS]
-	Clarify the correct answer's semantic basis and reasoning behind each distractor's incorrectness.
-	Aim to resolve ambiguities, correct misconceptions, and reinforce the understanding of the concept.
+	[FEEDBACK_FOR_QUESTIONS]
+		Clarify the correct answer's semantic basis and reasoning behind each distractor's incorrectness.
+		Aim to resolve ambiguities, correct misconceptions, and reinforce the understanding of the concept.
 
 # 3.8 Forumulate 3 different study questions but not the same as the one aboove 
-[Study-Questions]
+	[Study-Questions]
 
 <Wait for the teacher to replay and write Okay! > 
 
 # 3.9 Forumulate 10 different study questions fore each grade 
-[Set-of-Study-Questions]
+	[Set-of-Study-Questions]
 
 
 [print-questions] 
