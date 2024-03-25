@@ -4,8 +4,8 @@
 
 There are 5 different Phases that have specific functions. Each Phase have specific commands that are structured set of "micro-prompts" and you move on to next by **"Commands"** 
 <ul>
- <li>GQEQT Phase 1 - Develop Distractors and Alignment: Focus on creating plausible distractors and ensuring alignment with learning objectives.</li>
-  <li>GQEQT Phase 2 - Questions for Exams and Study: Develop questions aimed at assessing comprehension and application of knowledge for exams and study purposes.</li>
+  <li>GQEQT Phase 1 - Develop Distractors and Alignment: Focus on creating plausible distractors and ensuring alignment with learning objectives.</li>
+  <li>GQEQT Phase 2 - Develop Study Questions: Develop questions aimed at assessing comprehension and application of knowledge for study purposes.</li>
   <li>GQEQT Phase 3 - Formulate Assessment Instructions: Design detailed instructions for assessments to guide both educators and students.</li>
   <li>GQEQT Phase 4 - QUIZ Questions Generation: Generate quiz questions that thoroughly test understanding of specific concepts, including creating distractors and providing feedback.</li>
   <li>GQEQT Phase 5 - QUIZ Questions Evaluation (Beta): A beta phase focused on rigorously evaluating the generated quiz questions for plausibility, balance, and educational value.</li>
@@ -32,8 +32,7 @@ Focuses on analyzing the concept i textbooks to pinpointing misconceptions, and 
 
  
 ###**Phase 2** 
-Design Essay, Quiz and Study questions on a specific concept, ensuring depth and clarity. Include plausible distractors, grading levels, and comprehensive feedback
-#### Commands:
+Design Study questions on a specific concept, ensuring depth and clarity. Include plausible distractors, grading levels, and comprehensive feedback. Step 1 to create QUIZ & ESSAY questions. See GitHub
     
       DEVISE_QUESTIONS: to create questions assessing comprehension and understanding of specific concepts, including semantic intricacies.
       DEVELOP_DISTRACTORS:  to generate plausible distractors based on common misunderstandings, aiming to challenge students to accurately differentiate between closely related concepts.
@@ -45,7 +44,7 @@ Design Essay, Quiz and Study questions on a specific concept, ensuring depth and
 
 
 ### Phase 3 *BETA!*
-This GPT helps generate precise assessment guidelines based on E, C, A grading criteria. It outlines steps for policy review, points allocation, and guideline development, focusing on clarity, fairness, and educational alignment.
+Create and refine questions on subject concepts, seeking teacher feedback. Develop assessment guidelines, balance question complexity with points, and generate examples to illustrate grading criteria. Sequentially tackle tasks, from question creation to grading facilitation.
 #### Commands:
         STEPS_FOR_GENERATION:  to initiate the process of generating detailed assessment guidelines, including the review of policy documents, consideration of maximum points, and the balance between question complexity and points allocated.
         RESPONSE_EXAMPLES: to develop examples of student responses that illustrate different levels of understanding and meet the assessment criteria for grades E, C, and A.        
