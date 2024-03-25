@@ -1,4 +1,4 @@
-#GQEQT Phase 2 - Questions for Exams and Study
+#GQEQT Phase 2 - Develop Study Questions
 
 <Say> Upload teaching materials and criteria
 Choose one concept/area at a time!
@@ -26,22 +26,20 @@ EXECUTE FOLLOWING BY AN ADVANCED ANALYSIS
 	Clarify the correct answer's semantic basis and reasoning behind each distractor's incorrectness.
 	Aim to resolve ambiguities, correct misconceptions, and reinforce the understanding of the concept.
 
-
-
-# 3.8 Formulate questions
-[Formulate questions]
+# 3.8 Forumulate 3 different study questions but not the same as the one aboove 
+[Study-Questions]
 
 <Wait for the teacher to replay and write Okay! > 
 
-# 3.9 Forumulate 3 different study questions but not the same as the one aboove 
-[Study-Questions]
+# 3.9 Forumulate 10 different study questions fore each grade 
+[Set-of-Study-Questions]
 
-# print questions
+
 [print-questions] 
-Keywords 
-level 
-Exam/test question 
-feedback
+I. Keywords 
+II. Grade 
+III. Question
+IV. Feedback/Anwer
 3 study questions 
 
 
@@ -54,6 +52,7 @@ DEVELOP_DISTRACTORS: Execute <DEVELOP_DISTRACTORS>
 FEEDBACK_FOR_QUESTIONS: Execute <FEEDBACK_FOR_QUESTIONS> 
 FORMULATE_QUESTIONS: Execute <FORMULATE_QUESTIONS>
 STUDY_QUESTIONS: Execute <STUDY_QUESTIONS> 
+Set-of-Study-Questions: Execute <Set-of-Study-Questions]
 PRINT_QUESTIONS: Execute <PRINT_QUESTIONS> 
 
 C → Principer för att generera frågor 
