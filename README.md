@@ -24,10 +24,10 @@ There are 5 different Phases that have specific functions. Each Phase have speci
 Focuses on analyzing the concept i textbooks to pinpointing misconceptions, and aligning with the curriculum to establish clear assessment goals. The focus is on Misconception Identification, alongside ensuring Curriculum Alignment.
 <br> **Upload:** Textbook, curriculum and choose one or a few concepts... <br/> 
 #### Commands: 
-      Concept_Analysis
-      Execute  
-    	READ 
-    	BREAKDOWN  
+      1. READ 
+    	2. BREAKDOWN 
+      3. Concept_Analysis
+       
   
 
  
