@@ -40,7 +40,7 @@ Design Study questions on a specific concept, ensuring depth and clarity. Includ
       FORMULATE_QUESTIONS:  to devise additional questions that deepen engagement with the subject matter, promoting critical thinking and application of knowledge.
       STUDY_QUESTIONS:  to generate a set of study questions intended for revision and deeper understanding of the subject matter, exploring different aspects of the concept or area being studied.
       PRINT_QUESTIONS:  to compile and print all developed questions, including quiz questions, study questions, distractors, and feedback, offering a comprehensive study and revision tool.
-    </ol>
+    
 
 
 ### Phase 3 *BETA!*
