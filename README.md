@@ -34,12 +34,12 @@ Focuses on analyzing the concept i textbooks to pinpointing misconceptions, and 
 ###**Phase 2** 
 Design Study questions on a specific concept, ensuring depth and clarity. Include plausible distractors, grading levels, and comprehensive feedback. Step 1 to create QUIZ & ESSAY questions. See GitHub
     
-      DEVISE_QUESTIONS: to create questions assessing comprehension and understanding of specific concepts, including semantic intricacies.
-      DEVELOP_DISTRACTORS:  to generate plausible distractors based on common misunderstandings, aiming to challenge students to accurately differentiate between closely related concepts.
-      FEEDBACK_FOR_QUESTIONS:  to provide detailed explanations for the correct answers, clarifying the reasoning behind each distractor's plausibility and addressing misconceptions.
-      FORMULATE_QUESTIONS:  to devise additional questions that deepen engagement with the subject matter, promoting critical thinking and application of knowledge.
-      STUDY_QUESTIONS:  to generate a set of study questions intended for revision and deeper understanding of the subject matter, exploring different aspects of the concept or area being studied.
-      PRINT_QUESTIONS:  to compile and print all developed questions, including quiz questions, study questions, distractors, and feedback, offering a comprehensive study and revision tool.
+      (DEVISE_QUESTIONS: to create questions assessing comprehension and understanding of specific concepts, including semantic intricacies.)
+      1. DEVELOP_DISTRACTORS:  to generate plausible distractors based on common misunderstandings, aiming to challenge students to accurately differentiate between closely related concepts.
+      3. FEEDBACK_FOR_QUESTIONS:  to provide detailed explanations for the correct answers, clarifying the reasoning behind each distractor's plausibility and addressing misconceptions.
+      (FORMULATE_QUESTIONS:  to devise additional questions that deepen engagement with the subject matter, promoting critical thinking and application of knowledge.)
+      2. STUDY_QUESTIONS:  to generate a set of study questions intended for revision and deeper understanding of the subject matter, exploring different aspects of the concept or area being studied.
+      4. PRINT_QUESTIONS:  to compile and print all developed questions, including quiz questions, study questions, distractors, and feedback, offering a comprehensive study and revision tool.
     
 
 
