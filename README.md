@@ -31,7 +31,7 @@ Focuses on analyzing the concept i textbooks to pinpointing misconceptions, and 
   
 
  
-###**Phase 2** 
+### Phase 2 
 Design Study questions on a specific concept, ensuring depth and clarity. Include plausible distractors, grading levels, and comprehensive feedback. Step 1 to create QUIZ & ESSAY questions. See GitHub
     
       (DEVISE_QUESTIONS: to create questions assessing comprehension and understanding of specific concepts, including semantic intricacies.)
