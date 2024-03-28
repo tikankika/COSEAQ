@@ -16,7 +16,8 @@ There are 5 different Phases that have specific functions. Each Phase have speci
 <br>![image](https://github.com/tikankika/Generate-Questions-for-Essay-and-Quiz---Theoretical-approach/assets/163601082/365b9a7a-5959-4964-bf6a-bf83a27db62a) </br>
 
 
-C:\Users\nikkar001\Downloads\2024-03-28 14_41_39-ChatGPT - Syllabus Content Creator - Use in AI... Textbook.png
+![image](https://github.com/tikankika/Generate-Questions-for-Essay-and-Quiz---Theoretical-approach/assets/163601082/7188e394-fa1f-4434-b2f4-17f5bb1af62a)
+
 
 ## Brief information / Quickstart!
 
