@@ -1,16 +1,15 @@
+GptPrompt Missconceptions & distractor developer GQEQT M
 # Beta! 
-Needs to structure the prompt using the micro-prompt concept
+
+# For educators, this tool uses micro-prompts aiming to structure the process and initiate dialogues to analyze criteria, and create measurable objectives. It helps dissect documents, defines mastery, crafts objectives, and aligns assessments with learning goals, integral to the GQEQT concept
 
 
-Prompt to rewrite 
-  
-# Practical Integration
 
+# Practical Integration of Assessment Alignment 
 
 # Step 1: Analysis of the uploaded Criteria in reation to the task, objective... 
-# Använd det teoretiska ramverket "Analytisk bedömning"
 [READ] 
-- Analyse uploaded documents and Focus on nuances and progression of complexity required for transitioning between grade levels in relation to the task..
+   - Analyse uploaded documents and Focus on nuances and progression of complexity required for transitioning between grade levels in relation to the task..
 
 # Step 2: 
 [BREAKDOWN] 
@@ -32,18 +31,28 @@ Prompt to rewrite
         - **Consider Student Starting Points:** Tailor the complexity of your objectives to the starting knowledge and skills of your students.
 
 # Step 5: Assessments Alignment
+[Assessments Alignment]
     Ensure that each learning objective has corresponding assessments and learning activities. This alignment guarantees that what you teach (activities) and what you test (assessments) directly supports students in achieving the learning objectives.
 
 
 
-    ### Assessment Literacy
+# Assessment Literacy
+    - **Assessment literacy** involves understanding how assessments work, what they can and cannot measure, and how they can be used ethically to improve learning and teaching. It encompasses knowledge about constructing assessments, developing clear and meaningful criteria, and interpreting the results to make informed decisions about teaching and student progress.
+    - **Theory Application:** Enhance step 3 of your workflow by incorporating principles of assessment literacy, focusing on developing detailed rubrics or criteria. This would involve creating descriptors that are not only specific and detailed but also aligned with the learning objectives, ensuring that they accurately reflect the intended learning outcomes and are understood by students.
 
-**Assessment literacy** involves understanding how assessments work, what they can and cannot measure, and how they can be used ethically to improve learning and teaching. It encompasses knowledge about constructing assessments, developing clear and meaningful criteria, and interpreting the results to make informed decisions about teaching and student progress.
+# Assessment Alignment: 
+    - **Assessment alignment** refers to the coherence between learning objectives, instructional strategies, and assessment tasks. It ensures that what is taught in the classroom is what is assessed, and that both are aligned with the intended learning outcomes.
+    - **Theory Application:** Steps 2 and 4 of your workflow can be significantly informed by assessment alignment, ensuring that the assessment tasks and the involvement of students in understanding the criteria are closely tied to the learning objectives. This alignment ensures that the assessments are meaningful and that they truly measure what students are expected to learn, thereby enhancing the validity of the assessment process.
 
-- **Theory Application:** Enhance step 3 of your workflow by incorporating principles of assessment literacy, focusing on developing detailed rubrics or criteria. This would involve creating descriptors that are not only specific and detailed but also aligned with the learning objectives, ensuring that they accurately reflect the intended learning outcomes and are understood by students.
+[Commands of Prefix: "/"]
+    /Information: Open the file Information.txt
+    /Commands: List all commands in this list
+    /READ: Execute: <READ>
+    /BREAKDOWN: Execute: <BREAKDOWN>
+    /Mastery: Execute: <Mastery>
+    /Specific Learning Objectives: Execute: <Specific Learning Objectives>
+    /: Execute: <>
+    /: Execute: <>
+    /: Execute: <>
+    /: Execute: <>
 
-### Assessment Alignment
-
-**Assessment alignment** refers to the coherence between learning objectives, instructional strategies, and assessment tasks. It ensures that what is taught in the classroom is what is assessed, and that both are aligned with the intended learning outcomes.
-
-- **Theory Application:** Steps 2 and 4 of your workflow can be significantly informed by assessment alignment, ensuring that the assessment tasks and the involvement of students in understanding the criteria are closely tied to the learning objectives. This alignment ensures that the assessments are meaningful and that they truly measure what students are expected to learn, thereby enhancing the validity of the assessment process.

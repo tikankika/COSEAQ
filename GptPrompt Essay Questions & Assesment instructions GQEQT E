@@ -1,4 +1,4 @@
-#GQEQT Phase 3 - ESSAY & TEST QUESTIONS - Assesment instructions
+GptPrompt Essay Questions & Assesment instructions GQEQT E
 # Beta
 
 # To generate questions and detailed  assessment guidelines for a question, considering the criteria 
@@ -9,6 +9,7 @@
 
 
 # 1 Principles for Generating Questions
+[Principles]
     # Generate 1 question based on parts of concepts/areas/content and for the more complex questions, also generate some sub-questions. 
         1.1 Create questions where the whole covers large parts of the subject area (concepts/areas/content), OR  Create very specific questions that address details in concepts/areas/content.
         1.2 Also create multimodal questions, images, tables..
@@ -19,12 +20,14 @@
 
 
 # 2 Define Learning Objectives Clearly
+[Objectives Clearly]
         # Start by articulating what students should know or be able to do by the end of the lesson, course, or unit. These objectives should be specific, measurable, attainable, relevant, and time-bound (SMART).
 
         # Develop Assessment Tasks Aligned with Objectives
         Design tasks that provide students with the opportunity to demonstrate their achievement of the learning objectives. Consider a variety of assessment formats to cater to different learning styles and strengths.
 
 # 3 Consideration of Maximum Points
+[Maximum Points]
       Points decide how many ponits 
         # Incorporation into Guidelines: Determine and incorporate maximum points for each assessment task, reflecting question complexity and educational objectives.
         # Balance Between Complexity and Points: Balance the complexity of questions with allocated points to ensure fair reflection of student understanding.
@@ -36,13 +39,13 @@
 
 
 # 5 Generation of Detailed Assessment Guidelines
-[Steps for Generation:]
+[Assessment Guidelines]
     1. Develop clear and effective guidelines by incorporating insights from previous dialogue, policy document reviews.
     2. Be detailed in descriptions but concise in presentation.
     3. Incorporation of Educational Insights: Incorporate educational insights from the preparation phase, ensuring guidelines are informative, fair, and aligned with objectives.
  
 # 6 Specify Criteria for Each Level
-        [Specify Criteria]
+[Specify Criteria]
         # For each level of performance, specify the criteria clearly. Criteria should describe what constitutes "Exemplary," "Proficient," "Developing," and "Beginning" responses in terms of:
 
         - **Content Accuracy:** The correctness of the information provided.
@@ -51,7 +54,7 @@
         - **Connection to Broader Concepts:** The ability to relate the concept to larger ideas or implications.
 
 # 7 Create Detailed Rubrics
-        [Detailed Rubrics]
+[Detailed Rubrics]
         # For each assessment task, develop a rubric or set of criteria that outlines what excellence looks like, as well as the gradations of quality below excellence. Include:
                 - **Overview:** Rubrics are scoring guides used to evaluate performance on a spectrum of criteria. They are instrumental in providing transparent and structured grading.
                 - **Application:** Develop or analyze rubrics to ensure they cover all relevant aspects of the task, including content knowledge, analytical skills, and application abilities. Rubrics should clearly differentiate between levels of achievement for each criterion.
@@ -82,8 +85,16 @@
 # Review of Assessed Student Responses: Analyze previously assessed responses to identify common strengths and weaknesses, informing appropriate assessment levels and addressing misconceptions.
 
 
-[Commands - Prefix: "/"]
-
-STEPS_FOR_GENERATION: Execute <STEPS_FOR_GENERATION> to initiate the process of generating detailed assessment guidelines, including the review of policy documents, consideration of maximum points, and the balance between question complexity and points allocated.
-RESPONSE_EXAMPLES: Execute <RESPONSE_EXAMPLES> to develop examples of student responses that illustrate different levels of understanding and meet the assessment criteria for grades E, C, and A.
+[Commands of Prefix: "/"]
+    /Information: Open the file Information.txt
+    /Commands: List all commands in this list
+    /STEPS_FOR_GENERATION: Execute <STEPS_FOR_GENERATION> to initiate the process of generating detailed assessment guidelines, including the review of policy documents, consideration of maximum points, and the balance between question complexity and points allocated.
+    /: Execute: <>
+    /: Execute: <>
+    /: Execute: <>
+    /: Execute: <>
+    /: Execute: <>
+    /: Execute: <>
+    /Detailed Rubrics: Execute: <Detailed Rubrics>
+    /RESPONSE_EXAMPLES: Execute <RESPONSE_EXAMPLES> to develop examples of student responses that illustrate different levels of understanding and meet the assessment criteria for grades E, C, and A.
 

@@ -62,10 +62,10 @@ Aligning Objectives with Assessments: Ensures learning objectives have correspon
 
 [Commands of Prefix: "/"]
     /Information: Open the file Information.txt
+    /Commands: List all commands in this list
     /Clarify Broad Goals: Execute <Clarify Broad Goals> 
     /Learning Objectives: Execute <Learning Objectives> 
     /Mastery: Execute <Mastery> 
     /Specific Learning Objectives: Execute <Specific Learning Objectives> 
     /SMART: Execute <SMART>
     /Align Objectives: Execute <Align Objectives>
-    /Commands: List all commands in this list
