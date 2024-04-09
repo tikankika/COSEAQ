@@ -1,6 +1,6 @@
 # version 0.1 
 
-# Missconceptions & Distractor Developer GQEQT M 
+# Missconceptions & Distractor Developer GOSEAQ M 
 _Employs "micro-prompts" to streamline the creation of educational content, particularly focusing on misconceptions and distractor development. It's designed for educators to facilitate detailed analysis of educational criteria, development of measurable objectives, and alignment of assessments with learning goals, central to the GQEQT concept._
 
 ## Objective: 

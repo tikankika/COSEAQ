@@ -1,7 +1,7 @@
 # version 0.1
 
-# GptPrompt Assessment Alignment GQEQT A
-_Beta version. A strategic tool in the GQEQT framework, designed to assist educators in aligning assessments with learning objectives effectively. This tool utilizes micro-prompts to facilitate the process of dissecting educational documents, defining mastery, crafting specific learning objectives, and ensuring assessments are perfectly aligned with educational goals._
+# GptPrompt Assessment Alignment GOSEAQ A
+_Beta version. A strategic tool in the GOSEAQ framework, designed to assist educators in aligning assessments with learning objectives effectively. This tool utilizes micro-prompts to facilitate the process of dissecting educational documents, defining mastery, crafting specific learning objectives, and ensuring assessments are perfectly aligned with educational goals._
 
 ## Objective:
 To provide educators with a structured methodology for analyzing criteria, creating measurable objectives, and aligning assessments with learning goals. This GPT aims to foster meaningful dialogues around the alignment process, aiding in the construction of assessments that accurately measure student understanding and support learning outcomes.

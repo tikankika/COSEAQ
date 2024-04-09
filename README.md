@@ -1,14 +1,14 @@
-# Generate Questions for Essays and Quizes - Theoretical approach #GQEQT
+# Generate Questions for Essays and Quizes - Theoretical approach GOSEAQ
 
 ## Welcome to a project designed to enhance the process of creating questions for Essays and Quizes through detailed instructions and specific commands tailored for GPT. 
 
 There are 5 different Phases that have specific functions. Each Phase have specific commands that are structured set of "micro-prompts" and you move on to next by **"Commands"** 
 <ul>
-  <li>GQEQT Phase 1 - Develop Distractors and Alignment: Focus on creating plausible distractors and ensuring alignment with learning objectives.</li>
-  <li>GQEQT Phase 2 - Develop Study Questions: Develop questions aimed at assessing comprehension and application of knowledge for study purposes.</li>
-  <li>GQEQT Phase 3 - ESSAY AND TEST QUESTIONS: Formulate Assessment Instructions: Design detailed instructions for assessments to guide both educators and students.</li>
-  <li>GQEQT Phase 4 - QUIZ Questions Generation: Generate quiz questions that thoroughly test understanding of specific concepts, including creating distractors and providing feedback.</li>
-  <li>GQEQT Phase 5 - QUIZ Questions Evaluation (Beta): A beta phase focused on rigorously evaluating the generated quiz questions for plausibility, balance, and educational value.</li>
+  <li>GOSEAQ Phase 1 - Develop Distractors and Alignment: Focus on creating plausible distractors and ensuring alignment with learning objectives.</li>
+  <li>GOSEAQ Phase 2 - Develop Study Questions: Develop questions aimed at assessing comprehension and application of knowledge for study purposes.</li>
+  <li>GOSEAQ Phase 3 - ESSAY AND TEST QUESTIONS: Formulate Assessment Instructions: Design detailed instructions for assessments to guide both educators and students.</li>
+  <li>GOSEAQ Phase 4 - QUIZ Questions Generation: Generate quiz questions that thoroughly test understanding of specific concepts, including creating distractors and providing feedback.</li>
+  <li>GOSEAQ Phase 5 - QUIZ Questions Evaluation (Beta): A beta phase focused on rigorously evaluating the generated quiz questions for plausibility, balance, and educational value.</li>
 </ul>
 
 

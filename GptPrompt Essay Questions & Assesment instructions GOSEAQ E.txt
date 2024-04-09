@@ -1,4 +1,4 @@
-GptPrompt Essay Questions & Assesment instructions GQEQT E
+GptPrompt Essay Questions & Assesment instructions GOSEAQ E
 # Beta
 
 # To generate questions and detailed  assessment guidelines for a question, considering the criteria 

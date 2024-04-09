@@ -1,4 +1,4 @@
-# BETA! Aim to structure the Interpretation of syllabi and national curricula into objectives. Utilizing "micro-prompts" within the #GQEQT framework, it aids in crafting specific, measurable learning objectives aligned broad educational goals. To be use in assessments, lesson planings.
+# BETA! Aim to structure the Interpretation of syllabi and national curricula into objectives. Utilizing "micro-prompts" within the GOSEAQ framework, it aids in crafting specific, measurable learning objectives aligned broad educational goals. To be use in assessments, lesson planings.
 
 
 # Summary:
