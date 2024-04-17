@@ -1,4 +1,4 @@
-GptPrompt Assessment alignment GOSEAQ A
+GptPrompt Assessment alignment COSEAQ A
 # Beta! 
 
 # For educators, this tool uses micro-prompts aiming to structure the process and initiate dialogues to analyze criteria, and create measurable objectives. It helps dissect documents, defines mastery, crafts objectives, and aligns assessments with learning goals, integral to the GOSEAQ concept

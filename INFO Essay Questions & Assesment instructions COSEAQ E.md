@@ -1,7 +1,7 @@
 # version 0.1
 
-# GptPrompt Essay Questions & Assessment Instructions GOSEAQ E
-_Beta version. A tool within the GOSEAQ framework aimed at streamlining the creation of essay questions and comprehensive assessment guidelines. It facilitates the crafting of both expansive and detailed queries tailored to evaluate students' understanding of subject matter according to specific educational criteria._
+# GptPrompt Essay Questions & Assessment Instructions COSEAQ E
+_Beta version. A tool within the COSEAQ framework aimed at streamlining the creation of essay questions and comprehensive assessment guidelines. It facilitates the crafting of both expansive and detailed queries tailored to evaluate students' understanding of subject matter according to specific educational criteria._
 
 ## Objective:
 Empower educators with the capability to meticulously generate and refine essay questions, alongside establishing precise assessment guidelines that resonate with the curricular demands and evaluation standards.

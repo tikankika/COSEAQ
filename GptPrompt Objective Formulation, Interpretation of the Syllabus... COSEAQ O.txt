@@ -1,4 +1,6 @@
-# BETA! Aim to structure the Interpretation of syllabi and national curricula into objectives. Utilizing "micro-prompts" within the GOSEAQ framework, it aids in crafting specific, measurable learning objectives aligned broad educational goals. To be use in assessments, lesson planings.
+GptPrompt Objective Formulation, Interpretation of the Syllabus... COSEAQ O
+
+# BETA! Aim to structure the Interpretation of syllabi and national curricula into objectives. Utilizing "micro-prompts" within the COSEAQ framework, it aids in crafting specific, measurable learning objectives aligned broad educational goals. To be use in assessments, lesson planings.
 
 
 # Summary:
@@ -28,7 +30,7 @@ Aligning Objectives with Assessments: Ensures learning objectives have correspon
 
 
 # Step 3: Define What Mastery Looks Like
-    [Mastery]    
+[Mastery]    
     #Consider what it means for a student to understand or master these key concepts and skills. This is where you start getting specific. 
     #For instance, mastering the concept of energy flow in ecosystems could involve being able to trace the flow of energy from the sun through various trophic levels.
     Determine what mastery of these key concepts and skills entails. This step involves specifying what students must be able to do or understand to be considered proficient. 
@@ -45,11 +47,11 @@ Aligning Objectives with Assessments: Ensures learning objectives have correspon
 
 # Step 5: Applying the SMART Criteria
 [SMART]
-- **Specific:** Each objective should clearly describe what the student will know or be able to do. Avoid general terms without clear actions.
-- **Measurable:** Define how you will know that the student has achieved the objective. What evidence will demonstrate mastery?
-- **Achievable:** Consider the starting knowledge level of your students and the course's scope to set realistic objectives.
-- **Relevant:** Ensure objectives are directly related to the course goals and valuable for students' personal, academic, or career growth.
-- **Time-bound:** Where possible, associate objectives with specific timeframes within the course duration
+    - **Specific:** Each objective should clearly describe what the student will know or be able to do. Avoid general terms without clear actions.
+    - **Measurable:** Define how you will know that the student has achieved the objective. What evidence will demonstrate mastery?
+    - **Achievable:** Consider the starting knowledge level of your students and the course's scope to set realistic objectives.
+    - **Relevant:** Ensure objectives are directly related to the course goals and valuable for students' personal, academic, or career growth.
+    - **Time-bound:** Where possible, associate objectives with specific timeframes within the course duration
 
 
 ### Step 6: Align Objectives with Assessments

@@ -1,15 +1,36 @@
-# Generate Questions for Essays and Quizes - Theoretical approach GOSEAQ
+# COSEAQ framework - 
 
-## Welcome to a project designed to enhance the process of creating questions for Essays and Quizes through detailed instructions and specific commands tailored for GPT. 
+# Introduction
 
-There are 5 different Phases that have specific functions. Each Phase have specific commands that are structured set of "micro-prompts" and you move on to next by **"Commands"** 
+The COSEAQ framework is not solely about facilitating educators' work with content creation; through initiated dialogues, it aims to enhance and deepen workflows, including theoretical aspects like constructive alignment and assessment literacy in the creation of educational content. The framework aims to improve the development of high-quality content, such as essay questions, assessment guidelines, and quizzes, that are aligned with actual teaching, the syllabus, and the national curriculum.
+
+The framework utilizes CustomGPTs (OpenAI, GPT-4). It builds upon the concept of microprompts to scaffold the content creation process and facilitate meaningful dialogues between teachers and AI. These custom GPTs can function independently but are specifically designed to be combined, which enhances their effectiveness.
+
+**Core Aspects of the framework:**
 <ul>
-  <li>GOSEAQ Phase 1 - Develop Distractors and Alignment: Focus on creating plausible distractors and ensuring alignment with learning objectives.</li>
-  <li>GOSEAQ Phase 2 - Develop Study Questions: Develop questions aimed at assessing comprehension and application of knowledge for study purposes.</li>
-  <li>GOSEAQ Phase 3 - ESSAY AND TEST QUESTIONS: Formulate Assessment Instructions: Design detailed instructions for assessments to guide both educators and students.</li>
-  <li>GOSEAQ Phase 4 - QUIZ Questions Generation: Generate quiz questions that thoroughly test understanding of specific concepts, including creating distractors and providing feedback.</li>
-  <li>GOSEAQ Phase 5 - QUIZ Questions Evaluation (Beta): A beta phase focused on rigorously evaluating the generated quiz questions for plausibility, balance, and educational value.</li>
+      <li>**Dialogic Approach:** Facilitates meaningful exchanges between educators and AI, enhancing the learning process through active dialogue.</li>
+      <li>**Scaffolding Support:** Microprompts provide structure and guidance to align the generated content with educational standards.</li>
+      <li>**Customized GPTs:** Each GPT is designed to stand alone yet can be combined to cover various educational needs, ensuring versatility and adaptability.</li>
 </ul>
+
+**Purpose Beyond Efficiency:**
+
+The framework is not merely about simplifying and streamlining teachers' work; it's about enhancing our professional expertise and practice. By integrating AI into the educational process, the framework aims to support and enhance pedagogical processes without compromising educational integrity or teacher autonomy. Reflecting a combination of theoretical frameworks, it offers educators the flexibility to select approaches that best fit their teaching style and subject matter, ensuring that the technology serves the teacher and not the other way around.
+
+
+## Components overveiw
+ 
+There are different Phases that have specific functions. Each Phase have specific commands that are structured set of "micro-prompts" and you move on to next by **"Commands"** 
+<ul>
+  <li>COSEAQ Phase 1 - Develop Distractors and Alignment: Focus on creating plausible distractors and ensuring alignment with learning objectives.</li>
+  <li>COSEAQ Phase 2 - Develop Study Questions: Develop questions aimed at assessing comprehension and application of knowledge for study purposes.</li>
+  <li>COSEAQ Phase 3 - ESSAY AND TEST QUESTIONS: Formulate Assessment Instructions: Design detailed instructions for assessments to guide both educators and students.</li>
+  <li>COSEAQ Phase 4 - QUIZ Questions Generation: Generate quiz questions that thoroughly test understanding of specific concepts, including creating distractors and providing feedback.</li>
+  <li>COSEAQ Phase 5 - QUIZ Questions Evaluation (Beta): A beta phase focused on rigorously evaluating the generated quiz questions for plausibility, balance, and educational value.</li>
+</ul>
+
+### Micropromts for each GPT
+
 
 
 **Start with **Phase 1** and change between the different Phases:**   
