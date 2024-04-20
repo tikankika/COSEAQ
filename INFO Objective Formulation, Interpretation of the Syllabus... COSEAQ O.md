@@ -1,5 +1,8 @@
 # Objective Formulation, Interpretation of the Syllabus... COSEAQ O
 
+_Aim to structure the Interpretation of syllabi and national curricula into objectives. Utilizing "micro-prompts" within the COSEAQ framework, it aids in crafting specific, measurable learning objectives aligned broad educational goals. To be use in assessments, lesson planings._
+
+
 **Contribution:** Engaging in dialogue between educators and AI enhances the process of interpreting syllabi and formulating objectives by enabling the precise dissection of broad educational goals into specific, actionable objectives. This elevates pedagogical practice by fostering deeper engagement and understanding among educators.
 
 **Objective:** The objective is to facilitate a structured and nuanced translation of educational goals into detailed learning objectives that are aligned with educational standards. This is achieved through a dialogic approach that not only clarifies complex goals but also supports the formulation of SMART (Specific, Measurable, Achievable, Relevant, Time-bound) objectives.
