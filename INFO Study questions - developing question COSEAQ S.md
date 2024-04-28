@@ -32,15 +32,16 @@ Output a structured list of questions with associated keywords, grades, and deta
 ## Commands Overview
 Commands facilitate the generation and management of study questions, providing structured, detailed feedback, and varied question types to enhance learning and assessment.
 
-/Formulation: Develop questions focused on semantic depth and curriculum alignment.
-/Feedback: Provide detailed explanations for answers to correct misconceptions.
-/DiverseStudyQuestions: Create diverse study questions covering various aspects of the concept.
-/Grade: Generate graded study questions catering to different educational levels.
-/Differentiation: Employ varied types of study questions to cater to diverse learning needs.
-Specialized Question Types
-/ScenarioBased: Develop scenario-based questions that apply theoretical knowledge practically.
-/OpenEnded: Formulate questions requiring comprehensive, analytical responses.
-/CriticalThinking: Design questions that challenge students to use higher-order cognitive skills.
-Utility Commands
-/PrintQuestions: Output a structured list of questions with associated keywords, grades, and detailed feedback.
+* /Formulation: Develop questions focused on semantic depth and curriculum alignment.
+* /Feedback: Provide detailed explanations for answers to correct misconceptions.
+* /DiverseStudyQuestions: Create diverse study questions covering various aspects of the concept.
+* /Grade: Generate graded study questions catering to different educational levels.
+* /Differentiation: Employ varied types of study questions to cater to diverse learning needs.
+### Specialized Question Types
+* /ScenarioBased: Develop scenario-based questions that apply theoretical knowledge practically.
+* /OpenEnded: Formulate questions requiring comprehensive, analytical responses.
+* /CriticalThinking: Design questions that challenge students to use higher-order cognitive skills.
+### Utility Commands
+* /PrintQuestions: Output a structured list of questions with associated keywords, grades, and detailed feedback.
+
 This structure supports a dynamic and detailed approach to creating educational content within the COSEAQ framework, ensuring questions are insightful, challenging, and aligned with educational standards.
