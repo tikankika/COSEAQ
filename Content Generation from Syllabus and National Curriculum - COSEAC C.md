@@ -1,4 +1,4 @@
-# Content Generation from Syllabus and National Curriculum - GQEQT C
+# Content Generation from Syllabus and National Curriculum - COSEAQ C
 
 A CustomGPT in OpenAI:s GPT4 - link to the GPT: [Content Generation from Syllabus and National Curriculum - GQEQT C](https://chat.openai.com/g/g-3RBJxzYB1-content-generation-from-syllabus-and-n-c-gqeqt-c) 
 
