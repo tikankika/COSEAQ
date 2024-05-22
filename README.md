@@ -2,21 +2,19 @@
 
 # Introduction
 
+The COSEAQ framework, designed for use with generative AI, goes beyond merely facilitating educators' work with content creation. The framework, aiming to improve the development of high-quality content such as essay questions, assessment guidelines, and quizzes, engages in dialogue with AI while considering theoretical aspects like constructive alignment and assessment literacy in the creation of educational materials. It is designed to enhance and deepen workflows, ensuring alignment with actual teaching, the syllabus, and the national curriculum.
 
-The COSEAQ framework is not solely about facilitating educators' work with content creation; through initiated dialogues, it aims to enhance and deepen workflows, including theoretical aspects like constructive alignment and assessment literacy in the creation of educational content. The framework aims to improve the development of high-quality content, such as essay questions, assessment guidelines, and quizzes, that are aligned with actual teaching, the syllabus, and the national curriculum.
+The framework builds upon the concept of microprompts to scaffold the content creation process and facilitate meaningful dialogues between teachers and AI. It is incorporated in a serie of CustomGPTs (OpenAI, GPT-4). Although these CustomGPTs can function independently, they are specifically designed to be combined, enhancing their effectiveness. Additionally, the framework can be advantageously used as separate series of microprompts in other language models, such as Claude 3 and Gemini Advanced.
 
-The framework utilizes CustomGPTs (OpenAI, GPT-4). It builds upon the concept of microprompts to scaffold the content creation process and facilitate meaningful dialogues between teachers and AI. These custom GPTs can function independently but are specifically designed to be combined, which enhances their effectiveness.
-
-**Core Aspects of the framework:**
+**Core Aspects of the Framework:**
 <ul>
-      <li>**Dialogic Approach:** Facilitates meaningful exchanges between educators and AI, enhancing the learning process through active dialogue.</li>
+      <li>**Dialogic Approach:** Facilitates meaningful exchanges between educators and AI, enhancing the creation process through active dialogue.</li>
       <li>**Scaffolding Support:** Microprompts provide structure and guidance to align the generated content with educational standards.</li>
-      <li>**Customized GPTs:** Each GPT is designed to stand alone yet can be combined to cover various educational needs, ensuring versatility and adaptability.</li>
+      <li>**Customized GPTs:** Each GPT is designed to stand alone, yet they can be combined to cover various educational needs, ensuring versatility and adaptability.</li>
 </ul>
 
 **Purpose Beyond Efficiency:**
-
-The framework is not merely about simplifying and streamlining teachers' work; it's about enhancing our professional expertise and practice. By integrating AI into the educational process, the framework aims to support and enhance pedagogical processes without compromising educational integrity or teacher autonomy. Reflecting a combination of theoretical frameworks, it offers educators the flexibility to select approaches that best fit their teaching style and subject matter, ensuring that the technology serves the teacher and not the other way around.
+The framework is not merely about simplifying and streamlining teachers' work; it's about enhancing our professional expertise and practice. By integrating generative AI into the creation of educational materials, the aim is to support and enhance pedagogical processes without compromising educational integrity or teacher autonomy. Reflecting a combination of theoretical frameworks, it offers educators the flexibility to select approaches that best fit their teaching practice and subject matter, ensuring that the technology serves the teacher and not the other way around.
 
 
 ## Components overveiw
