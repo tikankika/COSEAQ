@@ -2,6 +2,7 @@
 
 # Introduction
 
+
 The COSEAQ framework is not solely about facilitating educators' work with content creation; through initiated dialogues, it aims to enhance and deepen workflows, including theoretical aspects like constructive alignment and assessment literacy in the creation of educational content. The framework aims to improve the development of high-quality content, such as essay questions, assessment guidelines, and quizzes, that are aligned with actual teaching, the syllabus, and the national curriculum.
 
 The framework utilizes CustomGPTs (OpenAI, GPT-4). It builds upon the concept of microprompts to scaffold the content creation process and facilitate meaningful dialogues between teachers and AI. These custom GPTs can function independently but are specifically designed to be combined, which enhances their effectiveness.
