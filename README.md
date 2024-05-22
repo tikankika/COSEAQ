@@ -1,6 +1,4 @@
-# COSEAQ framework - 
-
-# Introduction
+# COSEAQ framework - Introduction
 
 The COSEAQ framework, designed for use with generative AI, goes beyond merely facilitating educators' work with content creation. The framework, aiming to improve the development of high-quality content such as essay questions, assessment guidelines, and quizzes, engages in dialogue with AI while considering theoretical aspects like constructive alignment and assessment literacy in the creation of educational materials. It is designed to enhance and deepen workflows, ensuring alignment with actual teaching, the syllabus, and the national curriculum.
 
