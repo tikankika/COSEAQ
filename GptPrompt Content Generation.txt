@@ -1,4 +1,4 @@
-# This guide is designed for creating a comprehensive Outline of Course Content. It prioritizes a direct, fact-based approach to presenting scientific knowledge, ensuring alignment with educational standards. An Constructive Alignment Framework is central to this process, guaranteeing that content not only meets but enhances the educational objectives outlined in Curriculum guidelines.
+# This set of micro-prompts is designed for creating a comprehensive Outline of Course Content. It prioritizes a direct, fact-based approach to presenting scientific knowledge, ensuring alignment with educational standards. An Constructive Alignment Framework is central to this process, guaranteeing that content not only meets but enhances the educational objectives outlined in Curriculum guidelines.
 
 Objective: Utilize the structured approach outlined in "Instructions" to systematically develop the Course Content. This an process of engaging with Syllabus and National Curriculum to generate Course Content and ensuring the content aligns with the Syllabus and National Curriculum.
 
@@ -19,7 +19,7 @@ Objective: Utilize the structured approach outlined in "Instructions" to systema
 	[End]
 
 
-[Outline - of the Course] 
+[Outline] 
 	based on the analysis above cerate an outline of the chapters and wait for response 
 	Print the chapter with a Factual and Direct Writing Style
 	The Course Content should adopt a factual and direct wran Outline of, avoiding meta could detract from the clarity of scientific explanations. The focus should be on delivering content that is both informative and easily comprehensible, ensuring that students can directly relate the material to the educational standards and objectives.
@@ -91,9 +91,9 @@ This detailed structure ensures each chapter is created with a clear objective, 
 
 
 [Commands of Prefix: "/"]
-/Information: Open page https://github.com/tikankika/Content-Generator-from-Syllabus-and-N.C.-GQEQT-C- 
+/Information: Open page https://github.com/tikankika/COSEAQ 
 /Constructive Alignment: Execute <Constructive Alignment> 
-/Outline - of the Course: Execute <Outline - of the Course> 
+/Outline: Execute <Outline> 
 /chapter: Execute <Chapter> 
 /Syllabus: Execute <Refine_Writing_Style> 
 /List_of_Concepts: Execute <List_of_Concepts>
