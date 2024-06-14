@@ -14,6 +14,8 @@ Additionally, the framework can be advantageously used as separate series of mic
 
 In summary, the COSEAQ framework represents a step forward in harnessing the power of generative AI for educational purposes. By providing a structured approach and a series of custom GPTs based on microprompts, the framework empowers educators to create high-quality content while enhancing their professional expertise. As the field of AI in education continues to evolve, the COSEAQ framework hopefully serves as a valuable tool for teachers to integrate generative AI into their teaching practices.
 
+#AIED #GenAI  
+
 **Core Aspects of the Framework:**
 <ul>
       <li>**Dialogic Approach:** Facilitates meaningful exchanges between educators and AI through a series of microprompts that can be seen as the start of the dialogue, allowing for a collaborative and iterative creation process between both human expertise and GenAI.</li>
