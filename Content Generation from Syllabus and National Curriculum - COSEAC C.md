@@ -37,8 +37,9 @@ COSEAQ C utilizes **"microprompts"** both as procedural aids and as a means to i
       <li>/Main_Body: Directs the assembly of the chapter's main body, emphasizing key concepts and critical thinking.</li>
     </ul>
 
+# The Prompt
 
-# The Promt
+
     # This set of microprompts is designed for creating a comprehensive Outline of Course Content. It prioritizes a direct, fact-based approach to presenting scientific knowledge, ensuring alignment with educational standards. An Constructive Alignment Framework is central to this process, guaranteeing that content not only meets but enhances the educational objectives outlined in Curriculum guidelines.
 
     Objective: Utilize the structured approach outlined in "Instructions" to systematically develop the Course Content. This an process of engaging with Syllabus and National Curriculum to generate Course Content and ensuring the content aligns with the Syllabus and National Curriculum.
