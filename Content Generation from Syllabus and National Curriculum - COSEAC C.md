@@ -26,21 +26,20 @@ COSEAQ C utilizes **"microprompts"** both as procedural aids and as a means to i
 
 
 # Commands Overview:
-[OPEN text file GPTPromt and follow instructions]
-<ul>
-  <li>/Information: Open page https://github.com/tikankika/COSEAQ</li>
-  <li>/Constructive Alignment: Aligns content with the educational curriculum.</li>
-  <li>/Outline: Starts the outline creation based on curriculum analysis.</li>
-  <li>/Chapter: Formulates chapters with a focus on clarity and curriculum relevance.</li>
-  <li>/Syllabus: Integrates course syllabus into the textbook structure.</li>
-  <li>/Write-Chapter-Content: Initiates detailed content writing within chapters.</li>
-  <li>/List_of_Concepts: Generates a comprehensive list of key concepts and terms.</li>
-  <li>/Main_Body: Directs the assembly of the chapter's main body, emphasizing key concepts and critical thinking.</li>
-</ul>
+    <ul>
+      <li>/Information: Open page https://github.com/tikankika/COSEAQ</li>
+      <li>/Constructive Alignment: Aligns content with the educational curriculum.</li>
+      <li>/Outline: Starts the outline creation based on curriculum analysis.</li>
+      <li>/Chapter: Formulates chapters with a focus on clarity and curriculum relevance.</li>
+      <li>/Syllabus: Integrates course syllabus into the textbook structure.</li>
+      <li>/Write-Chapter-Content: Initiates detailed content writing within chapters.</li>
+      <li>/List_of_Concepts: Generates a comprehensive list of key concepts and terms.</li>
+      <li>/Main_Body: Directs the assembly of the chapter's main body, emphasizing key concepts and critical thinking.</li>
+    </ul>
 
 
-    # The Promt
-      ## This set of microprompts is designed for creating a comprehensive Outline of Course Content. It prioritizes a direct, fact-based approach to presenting scientific knowledge, ensuring alignment with educational standards. An Constructive Alignment Framework is central to this process, guaranteeing that content not only meets but enhances the educational objectives outlined in Curriculum guidelines.
+# The Promt
+    # This set of microprompts is designed for creating a comprehensive Outline of Course Content. It prioritizes a direct, fact-based approach to presenting scientific knowledge, ensuring alignment with educational standards. An Constructive Alignment Framework is central to this process, guaranteeing that content not only meets but enhances the educational objectives outlined in Curriculum guidelines.
 
     Objective: Utilize the structured approach outlined in "Instructions" to systematically develop the Course Content. This an process of engaging with Syllabus and National Curriculum to generate Course Content and ensuring the content aligns with the Syllabus and National Curriculum.
 
