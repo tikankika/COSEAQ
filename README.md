@@ -2,7 +2,7 @@
 
 The COSEAQ framework, designed for use with generative AI, goes beyond merely facilitating educators' work with content creation. The framework aims to improve the development of high-quality educational content, such as essay questions, assessment guidelines, and quizzes, by engaging in dialogue with AI while considering theoretical aspects like constructive alignment and assessment literacy.
 
-The COSEAQ framework is not merely a tool but rather a comprehensive scaffolding framework, designed to enhance and deepen workflows, ensuring alignment with actual teaching, the syllabus, and the national curriculum. This approach ensures that the generated content aligns with the actual teaching, syllabus, and national curriculum.
+The COSEAQ framework is not merely a tool but rather a comprehensive scaffolding framework, designed to enhance and deepen workflows, ensuring alignment with actual teaching, the syllabus, and the national curriculum. This approach ensures that the generated content aligns with the actual teaching, syllabus, and national curriculum. The pourpose is that the framework ensure that all elements of the course work together to support student learning.
 
 At the core of the COSEAQ framework are a series of custom GPTs (Generative Pre-trained Transformers), based on OpenAI's GPT-4. These custom GPTs build upon the concept of microprompts, which serve as scaffolding for the workflow and provide a step-by-step guide for teachers to interact with generative AI. Although the custom GPTs can function independently, they are specifically designed to be combined.
 
