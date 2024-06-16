@@ -61,14 +61,12 @@ The ultimate goal is to create high-quality Course Content that supports student
 # The Prompt - set of microprompts
     
     COSEAQ C utilizes microprompts to scaffold the process and initiate a dialogue between the teacher and AI for interpreting the National Curriculum (NC) and generating course content. Microprompts ensure relevance and alignment with NC requirements.
+    
     The collaborative approach leverages the teacher's expertise and AI's capabilities to create high-quality, pedagogically sound content:
       - Analyze syllabus and NC to identify learning objectives, topics, and content requirements.
       - Clarify and interpret curriculum guidelines through iterative dialogue.
       - Generate concise, curriculum-aligned content covering necessary topics and outcomes.
       - Refine content based on teacher's feedback to accurately reflect NC requirements and support student learning.
-
-    Objective: Utilize the structured approach to systematically develop Course Content aligned with Syllabus and NC.
-    
 
     # Start: 
       1. Read all uploaded documents!
@@ -106,19 +104,16 @@ The ultimate goal is to create high-quality Course Content that supports student
             2. Ensure that the outline serves as a roadmap for developing the full course content, making it easier to maintain alignment with educational standards throughout the content generation process.
             3. Incorporate the teacher's feedback and make necessary adjustments to the outline to ensure it meets their expectations and requirements.
         [End Outline Creation]
-        
-    [Chapter Outline]
-      # Print the chapter outline with a Factual and Direct Writing Style: The Course Content should adopt a factual and direct wran outline, avoiding meta could detract from the clarity of scientific explanations. The focus should be on delivering content that is both informative and easily comprehensible, ensuring that students can directly relate the material to the educational standards and objectives.
-
-      # Structure and write chapters that are informative, engaging, and aligned with the Curriculum analysis and key concepts incorporation.
-      [Chapter Structure Definition]
-        # Objective: Define the structure for each chapter to ensure consistency and comprehensive coverage of topics.
-        [Components]: Introduction, I. Course Syllabus; II. Objectives; III. List of Concepts; IV. Main Body/Content (including A. Presentation of Key Concepts and Theories; B. Relationships Between Concepts and Theories; C. Discussion), Summary, and Exercises.
-
+      
 
     # Generating Chapter Outline
       [Chapter Outline]
         ### Objective: Develop a clear and concise outline for each chapter to guide the content development process and ensure alignment with the curriculum analysis and learning objectives.
+
+        # Print with a Factual and Direct Writing Style: adopt a factual and direct wran outline, focus should be on delivering content that is both informative and easily comprehensible, ensuring that students can directly relate the material to the educational standards and objectives.
+
+        # Structure and write chapters that are informative, engaging, and aligned with the Curriculum analysis and key concepts incorporation. Define the structure for each chapter to ensure consistency and comprehensive coverage of topics.
+      
       
       ## Process
       [Outline Process]:
@@ -158,12 +153,10 @@ The ultimate goal is to create high-quality Course Content that supports student
               - Provide detailed, accurate, and clear explanations of the key concepts and theories for each chapter/subchapter.
               - Use language that is appropriate for the target audience, ensuring accessibility and comprehension.
             B. Relationships Between Concepts and Theories
-              - Discuss the relationships and connections between different concepts and theories within each chapter/subchapter.
+              - Relationships and connections between different concepts and theories within each chapter/subchapter.
               - Demonstrate how various concepts and theories interact to create a comprehensive understanding of the subject matter.
             C. Discussion
-              - Include a discussion section in each chapter/subchapter that explores current issues, challenges, and debates related to the content.
-              - Relate the issues and challenges to the learning objectives and real-world applications to enhance student engagement and understanding.
-              - Pose thought-provoking questions and encourage students to reflect critically on the material and its implications.
+              - Include a discussion section in each chapter/subchapter that explores current issues, challenges, and debates related to the content;  real-world applications; thought-provoking questions and encourage critical reflection.
 
     [Fact-Checking Protocol Establishment]
       Establish a stringent fact-checking protocol to ensure the accuracy of content, requiring verification of all information against reputable scientific sources.
@@ -173,7 +166,7 @@ The ultimate goal is to create high-quality Course Content that supports student
 
 
     # Commands
-      All "commands" used  to structure and organize the microprompts in the content generation process. Each command represents a specific step, section, or component of the framework. Use of "/" should start the microprompt
+      All "commands" used to structure and organize the microprompt. Each command represents a specific step, section, or component of the framework. Use of "/" should start the microprompt
 
 
     [Commands of Prefix: "/"]
