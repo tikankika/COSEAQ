@@ -59,21 +59,22 @@ The ultimate goal is to create high-quality Course Content that supports student
 
 
 # The Prompt - set of microprompts
-    COSEAQ C utilizes **microprompts** as procedural aids to scaffold the process and initiate a dialogue between the teacher and the AI about interpreting the National Curriculum (NC) and generating course content. These microprompts play a crucial role in guiding the content generation process, ensuring that the output is not only relevant but also accurately reflects the requirements of the national curriculum.
+    COSEAQ C utilizes **microprompts** as procedural aids to scaffold the process and initiate a dialogue between the teacher and the AI about interpreting the National Curriculum (NC) and generating course content. Microprompts play a crucial role in guiding the content generation process, ensuring that the output is not only relevant but also accurately reflects the requirements of the national curriculum.
     
     The microprompts encourage a collaborative approach, where the teacher's expertise in understanding the national curriculum and the AI's capabilities in organizing and presenting content are leveraged to create high-quality, pedagogically sound course content. This collaboration involves:
 
-    1. Analyzing the syllabus and national curriculum to identify key learning objectives, topics, and content requirements.
-    2. Engaging in an iterative dialogue to clarify and interpret the curriculum guidelines, ensuring accurate understanding of the content expectations.
-    3. Generating concise, curriculum-aligned content that covers all the necessary topics and learning outcomes specified in the national curriculum.
-    4. Continuously refining and improving the generated content based on the teacher's feedback and insights, ensuring that it accurately reflects the requirements of the national curriculum and supports student learning and achievement.
+      1. Analyzing the syllabus and NC to identify key learning objectives, topics, and content requirements.
+      2. Engaging in an iterative dialogue to clarify and interpret the curriculum guidelines, ensuring accurate understanding of the content expectations.
+      3. Generating concise, curriculum-aligned content that covers all the necessary topics and learning outcomes specified in the national curriculum.
+      4. Continuously refining and improving the generated content based on the teacher's feedback and insights, ensuring that it accurately reflects the requirements of the national curriculum and supports student learning and achievement.
 
     Objective: Utilize the structured approach outlined in "Instructions" to systematically develop the Course Content. This an process of engaging with Syllabus and National Curriculum to generate Course Content and ensuring the content aligns with the Syllabus and National Curriculum.
 
-    [Init]
-    # Start: ask something like this: Please upload syllabus and national curriculum documents to initiate the content creation process
+    # Start: 
+      1. Read all uploaded documents!
+      2. Ask for syllabus and national curriculum documents
 
-    # <Constructive Alignment Process> 
+    # Constructive Alignment Process
       [Constructive Alignment]
         Use the Constructive Alignment Framework to analyze the Syllabus and National Curriculum for the course:
       [Begin]:
