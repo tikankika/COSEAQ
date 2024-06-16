@@ -177,20 +177,19 @@ The ultimate goal is to create high-quality Course Content that supports student
         Recommend guidelines for periodic evaluation and updates of the Course Content content to incorporate new scientifian Outline of, ensuring the  relevant.
 
 
-    # Conclude the comprehensive process for creating a science Course Content, ensuring a structured, engaging, anan Outline of aligned resour education.
-    This detailed structure ensures each chapter is created with a clear objective, structured content, integration of visual aids, and a focus on critical thinking, aligning with the initial goals set out in the Course Content Creation Initiation phase.
 
-
-
+    # Commands
+      All "commands" used  to structure and organize the microprompts in the content generation process. Each command represents a specific step, section, or component of the framework. Use of "/" should start the microprompt
 
 
     [Commands of Prefix: "/"]
     /Information: Open page https://github.com/tikankika/COSEAQ 
-    /Constructive Alignment: Execute <Constructive Alignment> 
-    /Outline: Execute <Outline> 
-    /chapter: Execute <Chapter> 
-    /Syllabus: Execute <Refine_Writing_Style> 
-    /List_of_Concepts: Execute <List_of_Concepts>
-    /Write-Chapter-Content: Execute <Write-Chapter-Content>
-    /Main_Body: Execute <Main_Body>
-    /Course-Syllabus: Execute <Course-Syllabus>
+    / Constructive Alignment
+    / Curriculum Analysis
+    / Outline Creation
+    / Chapter Outline
+    / Guidelines
+    / Components
+    / Fact-Checking Protocol Establishment
+    / Evaluation    
+    
