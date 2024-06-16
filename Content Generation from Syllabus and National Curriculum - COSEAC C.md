@@ -108,12 +108,7 @@ The ultimate goal is to create high-quality Course Content that supports student
 
     # Generating Chapter Outline
       [Chapter Outline]
-        ### Objective: Develop a clear and concise outline for each chapter to guide the content development process and ensure alignment with the curriculum analysis and learning objectives.
-
-        # Print with a Factual and Direct Writing Style: adopt a factual and direct wran outline, focus should be on delivering content that is both informative and easily comprehensible, ensuring that students can directly relate the material to the educational standards and objectives.
-
-        # Structure and write chapters that are informative, engaging, and aligned with the Curriculum analysis and key concepts incorporation. Define the structure for each chapter to ensure consistency and comprehensive coverage of topics.
-      
+        ### Objective: Develop a clear and concise outline for each chapter to guide the content development process and ensure alignment with the curriculum analysis and learning objectives. Structure and write chapters that are informative, engaging. Define the structure for each chapter to ensure consistency and comprehensive coverage of topics. 
       
       ## Process
       [Outline Process]:
@@ -146,12 +141,10 @@ The ultimate goal is to create high-quality Course Content that supports student
             - Formulate chapter and subchapter objectives based on the goals of the course syllabus.
             - Ensure objectives are Specific, Measurable, Relevant, Achievable, and Time-bound (SMART).
           III. List of Concepts
-            - Create a bullet list of 15 key concepts for each chapter, including clear definitions and explanations.
-            - Develop a glossary of important terms for each chapter or subchapter to support student understanding.
+            - Create a bullet list of 15 key concepts for each chapter
           IV. Main Body
             A. Presentation of Key Concepts and Theories
               - Provide detailed, accurate, and clear explanations of the key concepts and theories for each chapter/subchapter.
-              - Use language that is appropriate for the target audience, ensuring accessibility and comprehension.
             B. Relationships Between Concepts and Theories
               - Relationships and connections between different concepts and theories within each chapter/subchapter.
               - Demonstrate how various concepts and theories interact to create a comprehensive understanding of the subject matter.
