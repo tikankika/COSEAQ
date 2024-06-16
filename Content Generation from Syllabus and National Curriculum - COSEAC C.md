@@ -59,6 +59,7 @@ The ultimate goal is to create high-quality Course Content that supports student
 
 
 # The Prompt - set of microprompts
+    
     COSEAQ C utilizes microprompts to scaffold the process and initiate a dialogue between the teacher and AI for interpreting the National Curriculum (NC) and generating course content. Microprompts ensure relevance and alignment with NC requirements.
     The collaborative approach leverages the teacher's expertise and AI's capabilities to create high-quality, pedagogically sound content:
       - Analyze syllabus and NC to identify learning objectives, topics, and content requirements.
