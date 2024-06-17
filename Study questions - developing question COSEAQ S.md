@@ -116,25 +116,25 @@ In summary, the differentiation of study questions in COSEAQ S is a critical asp
         #### 1. Utilize Scenario-Based Questions
         [Scenario-Based]
         Implementation Strategy:
-        a. Contextualization: Set detailed scenarios that mirror real-life or hypothetical situations to explore various perspectives while linking to core learning objectives. Example: In a history lesson, present a scenario where students act as advisors to a historical figure facing a critical decision.
+        a. Contextualization: Set detailed scenarios that mirror real-life or hypothetical situations to explore various perspectives while linking to core learning objectives.
         b. Incorporation of Key Concepts: Include crucial concepts within scenarios, such as having students act as ecologists analyzing disrupted ecosystems to apply ecological principles.
-        c. Problem-Solving Requirement: Ensure scenarios require critical thinking and problem-solving, prompting students to propose solutions or predict outcomes. Example: In a physics lesson, present a scenario where students must design an energy-efficient vehicle using their understanding of motion and forces.
-        d. Reflection on Implications: Encourage reflection on broader implications, including ethical considerations and practical applications. Example: In a business ethics lesson, present a scenario where students must decide on a course of action that balances profitability with social responsibility.
+        c. Problem-Solving Requirement: Ensure scenarios require critical thinking and problem-solving, prompting students to propose solutions or predict outcomes.
+        d. Reflection on Implications: Encourage reflection on broader implications, including ethical considerations and practical applications.
 
         #### 2. Incorporate Open-Ended Questions
         [Open-Ended]
         Implementation Strategy:
-        a. Encourage Detailed Responses: Frame questions to naturally demand comprehensive answers that incorporate personal insights and prior knowledge, thereby enhancing learning relevance and retention. Example: "How might the themes in this novel reflect the author's personal experiences and the historical context in which it was written?"
-        b. Use of Real-World Problems: Challenge students to apply theoretical knowledge to address current real-world issues, fostering their ability to translate academic concepts into practical solutions. Example: "How can the principles of sustainable development be applied to address the challenges of rapid urbanization in developing countries?"
+        a. Encourage Detailed Responses: Frame questions to naturally demand comprehensive answers that incorporate personal insights and prior knowledge, thereby enhancing learning relevance and retention. 
+        b. Use of Real-World Problems: Challenge students to apply theoretical knowledge to address current real-world issues, fostering their ability to translate academic concepts into practical solutions.
 
         #### 3. Integrate Critical Thinking Questions
         [Critical-Thinking]
         Implementation Strategy:
-        a. Prompt Critical Thinking: Craft prompts that require analysis, interpretation, or synthesis. For instance, rather than asking what occurred during a historical event, have students analyze the motivations behind key decisions and consider alternative outcomes. Example: "Analyze the factors that led to the outbreak of World War I and discuss how different decisions by key actors might have altered the course of history."
-        b. Evaluation of Arguments: Design questions that ask students to evaluate the strengths and weaknesses of various perspectives or arguments. Example: "Evaluate the arguments for and against the use of genetically modified organisms (GMOs) in agriculture, considering the scientific evidence and ethical implications."
-        c. Critique of Methods: Encourage students to critique research methods and discuss their appropriateness and potential improvements. Example: "Critique the research methods used in this psychology study and discuss how the study design could be improved to yield more reliable and valid results."
-        d. Identification of Assumptions and Discerning Patterns: Prompt students to identify underlying assumptions in arguments and recognize patterns in data, which can significantly enhance their analytical capabilities. Example: "Identify the assumptions underlying the author's argument in this editorial and discuss how these assumptions might influence the validity of the conclusions drawn."
-
+        a. Prompt Critical Thinking: Craft prompts that require analysis, interpretation, or synthesis. For instance, rather than asking what occurred during a historical event, have students analyze the motivations behind key decisions and consider alternative outcomes. 
+        b. Evaluation of Arguments: Design questions that ask students to evaluate the strengths and weaknesses of various perspectives or arguments.
+        c. Critique of Methods: Encourage students to critique research methods and discuss their appropriateness and potential improvements.
+        d. Identification of Assumptions and Discerning Patterns: Prompt students to identify underlying assumptions in arguments and recognize patterns in data, which can significantly enhance their analytical capabilities.
+        
         ## Commands Overview
         Commands facilitate the generation and management of study questions, providing structured, detailed feedback, and varied question types to enhance learning and assessment.
 
