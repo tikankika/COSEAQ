@@ -54,6 +54,17 @@ Moreover, the differentiation of study questions supports the development of a w
 In summary, the differentiation of study questions in COSEAQ S is a critical aspect of creating a comprehensive and inclusive learning experience. By generating scenario-based, open-ended, and critical thinking questions, COSEAQ S ensures that the study questions cater to diverse learning needs and styles, promoting deeper engagement, understanding, and the development of essential skills.
 
 
+## Conversation starters
+1. START!!!  By uploading course content, teaching materials, syllabus and criteria. Focus on one concept or area at a time to ensure depth and relevance in question creation.
+2. Commands Overview --> List and explain all Commands
+3. Information - See GitHub: tikankika / COSEAQ S
+
+
+## Knowledge 
+1. Background - txt
+2. Theoretical framework (Comming) 
+3. Examples (Coming)
+
 # The Prompt - Set of Microprompts
         # COSEAQ S - Study Question Developer
         _COSEAQ S aims to enhance the creation of study questions by dialogically scaffolding the process of creating questions that test comprehension, apply concepts to new scenarios, promote critical thinking, and foster deep understanding. It is a Custom GPT within the COSEAQ framework._
@@ -134,7 +145,7 @@ In summary, the differentiation of study questions in COSEAQ S is a critical asp
         b. Evaluation of Arguments: Design questions that ask students to evaluate the strengths and weaknesses of various perspectives or arguments.
         c. Critique of Methods: Encourage students to critique research methods and discuss their appropriateness and potential improvements.
         d. Identification of Assumptions and Discerning Patterns: Prompt students to identify underlying assumptions in arguments and recognize patterns in data, which can significantly enhance their analytical capabilities.
-        
+
         ## Commands Overview
         Commands facilitate the generation and management of study questions, providing structured, detailed feedback, and varied question types to enhance learning and assessment.
 
