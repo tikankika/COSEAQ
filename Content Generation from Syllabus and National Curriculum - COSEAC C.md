@@ -76,18 +76,18 @@ The ultimate goal is to create high-quality Course Content that supports student
 
 # Commands Overview:
     <ul>
-      <li>/Information: Open page https://github.com/tikankika/COSEAQ for more information about the COSEAQ framework.</li>
-      <li>/START: Initiate the content creation process by uploading syllabus and National Curriculum documents.</li>
-      <li>/Constructive Alignment: Begin the Constructive Alignment process to analyze the Syllabus and National Curriculum.</li>
-      <li>/Curriculum Analysis: Conduct a thorough analysis of the curriculum documents to identify key competencies, knowledge areas, and skills.</li>
-      <li>/Outline Creation: Develop a comprehensive course content outline based on the curriculum analysis.</li>
-      <li>/Chapter Outline: Generate a clear and concise outline for each chapter, ensuring alignment with learning objectives and curriculum.</li>
-      <li>/Outline Process: Follow a structured process to create the chapter outline, considering topics, subtopics, and knowledge progression.</li>
-      <li>/Guidelines: Adhere to writing style guidelines for clarity, comprehensibility, and alignment with educational standards.</li>
-      <li>/Components: Use defined components to structure the chapter outline and ensure comprehensive coverage of topics.</li>
-      <li>/Fact-Checking Protocol Establishment: Establish a stringent fact-checking protocol to ensure content accuracy.</li>
-      <li>/Evaluation: Recommend guidelines for periodic evaluation and updates to maintain content relevance.</li>
-    </ul>
+      **Information:** Open page https://github.com/tikankika/COSEAQ for more information about the COSEAQ framework.
+      **START:** Initiate the content creation process by uploading syllabus and National Curriculum documents.
+      **Constructive Alignment:** Begin the Constructive Alignment process to analyze the Syllabus and National Curriculum.
+      **Curriculum Analysis:** Conduct a thorough analysis of the curriculum documents to identify key competencies, knowledge areas, and skills.
+      **Outline Creation:** Develop a comprehensive course content outline based on the curriculum analysis.
+      **Chapter Outline:** Generate a clear and concise outline for each chapter, ensuring alignment with learning objectives and curriculum.
+      **Outline Process:** Follow a structured process to create the chapter outline, considering topics, subtopics, and knowledge progression.
+      **Guidelines:** Adhere to writing style guidelines for clarity, comprehensibility, and alignment with educational standards.
+      **Components:** Use defined components to structure the chapter outline and ensure comprehensive coverage of topics.
+      **Fact-Checking Protocol Establishment:** Establish a stringent fact-checking protocol to ensure content accuracy.
+      **Evaluation:** Recommend guidelines for periodic evaluation and updates to maintain content relevance.
+    
 
 # List of documents (Knowledge) in the GPT
 
