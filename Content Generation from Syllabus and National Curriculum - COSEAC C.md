@@ -7,6 +7,8 @@ A CustomGPT in OpenAI:s GPT4 - link to the GPT: [Content Generation from Syllabu
 
 COSEAQ C is part of the larger COSEAQ framework, which consists of interconnected Custom GPTs that can be utilized within the same thread; [for further information](https://community.openai.com/t/search-all-gpts-in-chat-with-recent-and-pinned-gpts/604356).
 
+
+## Role of Microprompts
 COSEAQ C utilizes **microprompts** as procedural aids to scaffold the process and initiate a dialogue between the teacher and the AI about interpreting the National Curriculum (NC) and generating course content. These microprompts play a crucial role in guiding the content generation process, ensuring that the output is not only relevant but also accurately reflects the requirements of the NC.
 
 The microprompts encourage a collaborative approach, where the teacher's expertise in understanding the NC and the AI's capabilities in organizing and presenting content are leveraged to create high-quality, pedagogically sound course content. This collaboration involves:
@@ -18,19 +20,21 @@ The microprompts encourage a collaborative approach, where the teacher's experti
 
 By utilizing the microprompts, COSEAQ C facilitates a structured process for developing course content that aligns with the NC, while leveraging the strengths of both the teacher's expertise and the AI's capabilities.
 
+## Constructive Alignment Framework
 The Constructive Alignment Framework plays a central role in this process. It ensures that the course content is developed in a way that aligns with the curriculum guidelines by covering all the necessary topics and learning outcomes specified in the NC. By using this framework, the teacher and the AI work together to interpret the NC and generate course content that supports student learning and achievement of the intended learning outcomes.
 
 
 **Objective:** Utilize a structured approach, as detailed in the "Prompt", to systematically generate Course Content that aligns with the Syllabus and NC. This approach involves:
 
-- Analyzing the Syllabus and National Curriculum to identify key learning objectives, topics, and content requirements.
-- Engaging in a dialogical process with the AI to interpret and clarify the curriculum guidelines, ensuring accurate understanding of the content expectations.
-- Leveraging the Custom GPT with microprompts to generate concise, curriculum-aligned content that meets the identified learning objectives and covers all the necessary topics specified in the NC.
-- Collaborating with the teacher to review and refine the generated content, ensuring that it is coherent, informative, and suitable for the intended audience, while accurately reflecting the requirements of the NC.
+- **Analyzing the Syllabus and National Curriculum** to identify key learning objectives, topics, and content requirements (see Curriculum Analysis in the prompt).
+- **Engaging in a dialogical process with the AI** to interpret and clarify the curriculum guidelines, ensuring accurate understanding of the content expectations (refers to the iterative dialogue process outlined in the prompt).
+- **Leveraging the Custom GPT with microprompts** to generate concise, curriculum-aligned content that meets the identified learning objectives and covers all the necessary topics specified in the NC (as outlined in the Content Generation section of the prompt).
+- **Collaborating with the teacher** to review and refine the generated content, ensuring that it is coherent, informative, and suitable for the intended audience, while accurately reflecting the requirements of the NC (see the Feedback and Refinement Process in the prompt).
 
+## Content Generation Process: Detailed Structure
 The ultimate goal is to create high-quality Course Content that supports student learning and achievement within the framework of the Syllabus and NC, by accurately interpreting and aligning with the curriculum guidelines through a collaborative process between the teacher and the AI.
 
-# Steps
+### Steps
 **Initiation:** 
 - Upload syllabus and National Curriculum documents to start the content creation cycle.
 
@@ -104,7 +108,7 @@ The ultimate goal is to create high-quality Course Content that supports student
       1. Read all uploaded documents!
       2. Ask for syllabus and NC documents
 
-    # Constructive Alignment Process
+    # Step 1: Constructive Alignment Process
       [Constructive Alignment]
         Use the Constructive Alignment Framework to analyze the Syllabus and NC for the course:
       [Begin]:
@@ -122,8 +126,8 @@ The ultimate goal is to create high-quality Course Content that supports student
               3. Prepare a summary of the relevant parts of the Syllabus and NC for reference during the content generation process.
           [End Curriculum Analysis]
 
-      ## Step 2: Comprehensive Outline of the Course Content
-        ### Objective: Develop a comprehensive outline of the course content based on the analysis of the Syllabus and NC.
+    # Step 2: Comprehensive Outline of the Course Content
+      ## Objective: Develop a comprehensive outline of the course content based on the analysis of the Syllabus and NC.
         [Outline Creation]
           [Process]:
             1. Use the list of key competencies, knowledge areas, and skills as a guide for structuring the outline.
@@ -138,9 +142,9 @@ The ultimate goal is to create high-quality Course Content that supports student
         [End Outline Creation]
       
 
-    # Generating Chapter Outline
+    # Step 3: Generating Chapter Outline
       [Chapter Outline]
-        ### Objective: Develop a clear and concise outline for each chapter to guide the content development process and ensure alignment with the curriculum analysis and learning objectives. Structure and write chapters that are informative, engaging. Define the structure for each chapter to ensure consistency and comprehensive coverage of topics. 
+        ## Objective: Develop a clear and concise outline for each chapter to guide the content development process and ensure alignment with the curriculum analysis and learning objectives. Structure and write chapters that are informative, engaging. Define the structure for each chapter to ensure consistency and comprehensive coverage of topics. 
       
       ## Process
       [Outline Process]:
