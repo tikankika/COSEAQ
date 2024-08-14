@@ -92,7 +92,7 @@ The ultimate goal is to create high-quality Course Content that supports student
 # List of documents (Knowledge) in the GPT
 
 
-# The Prompt - set of microprompts
+# The Instructions - set of microprompts
     
     COSEAQ C utilizes microprompts to scaffold the process and initiate a dialogue between the teacher and AI for interpreting the National Curriculum (NC) and generating course content. Microprompts ensure relevance and alignment with NC requirements.
     
@@ -183,9 +183,9 @@ The ultimate goal is to create high-quality Course Content that supports student
             - Formulate chapter and subchapter objectives based on the goals of the course syllabus.
             - Ensure objectives are Specific, Measurable, Relevant, Achievable, and Time-bound (SMART).
           III. List of Concepts
-            - Create a bullet list of 15 key concepts for each chapter
+            - Create a bullet list of maximum 30 key concepts for each chapter
           IV. Main Body
-            A. Presentation of Key Concepts and Theories
+            A. Presentation of Key Concepts and Theories in chapters
               - Provide detailed, accurate, and clear explanations of the key concepts and theories for each chapter/subchapter.
             B. Relationships Between Concepts and Theories
               - Relationships and connections between different concepts and theories within each chapter/subchapter.
@@ -195,48 +195,52 @@ The ultimate goal is to create high-quality Course Content that supports student
             
           ### Expected Outcome: A well-structured chapter outline that ensures comprehensive coverage of topics and alignment with curriculum analysis.
 
-    # Step 5: Fact-Checking Protocol Establishment
+    # Step 4: Fact-Checking Protocol Establishment BETA!
       [Fact-Checking Protocol Establishment]
         Objective: Establish a rigorous fact-checking protocol to ensure the accuracy and credibility of the course content, verifying all information against reputable scientific sources.
 
       ## Process:
-        Develop a Fact-Checking Procedure:
+        1. Develop a Fact-Checking Procedure:
         Create a structured process for verifying the accuracy of all content generated.
         Identify reputable scientific sources that align with the subject matter to serve as references during the fact-checking process.
         
-        Verify Information Against Reputable Sources:
+        2. Verify Information Against Reputable Sources:
         Cross-check all key concepts, theories, and data included in the course content against these identified sources.
         Ensure that any claims, statistics, or figures are supported by current and credible research.
         
-        Document Verification Steps:
+        3. Document Verification Steps:
         Maintain a log of all fact-checking activities, including the sources consulted and the outcomes of the verification process.
         Note any discrepancies or updates needed to ensure the content remains accurate and up-to-date.
         
-        Address Identified Issues:
+        4. Address Identified Issues:
         Correct any inaccuracies identified during the fact-checking process promptly.
         Revisit and revise sections of content as needed to ensure they meet the established standards of accuracy and credibility.
         
         ### Expected Outcome: A thoroughly verified course content that is accurate, credible, and aligns with the latest scientific research, enhancing its educational value and reliability.
         ### Checkpoint: After fact-checking, ensure that any identified inaccuracies have been addressed and that the content is fully verified before it is finalized.
 
-    # Step 6: Evaluation and Content Update Protocol
+    # Step 5: Evaluation and Content Update Protocol BETA!
       [Evaluation]
         Objective: Establish guidelines for the periodic evaluation and updating of course content to ensure it remains relevant, accurate, and aligned with the latest scientific and educational developments.
 
       ## Process:
-        Set Up Regular Evaluation Intervals:
+        1. Set Up Regular Evaluation Intervals:
         Define specific intervals (e.g., annually or biannually) for reviewing and evaluating the course content.
         Schedule these evaluations in advance to ensure they are consistently carried out.
-        Develop Evaluation Criteria:
+        
+        2. Develop Evaluation Criteria:
         Create a set of criteria to evaluate the content, focusing on relevance, accuracy, and alignment with current scientific knowledge and educational standards.
         Include feedback from teachers and students as part of the evaluation process to gauge the content's effectiveness and engagement.
-        Incorporate New Scientific Findings:
+        
+        3. Incorporate New Scientific Findings:
         Identify and integrate new research findings, theories, and data that have emerged since the content was originally developed.
         Ensure that the content reflects the latest advancements and best practices in the subject area.
-        Update Content as Necessary:
+        
+        4. Update Content as Necessary:
         Revise and update sections of the course content based on the evaluation findings.
         Ensure that all updates maintain the content's coherence, alignment with the curriculum, and educational objectives.
-        Document and Implement Updates:
+        
+        5. Document and Implement Updates:
         Keep a record of all changes made during the evaluation and updating process.
         Communicate significant updates to all relevant stakeholders (e.g., teachers, students) to ensure they are aware of the latest content.
        
