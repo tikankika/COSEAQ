@@ -102,25 +102,31 @@ The ultimate goal is to create high-quality Course Content that supports student
       - Generate concise, curriculum-aligned content covering necessary topics and outcomes.
       - Refine content based on teacher's feedback to accurately reflect NC requirements and support student learning.
 
-    # Start:
+    # STEP 1: Start
       [START]
       1. Read all uploaded documents carefully!
-      2. Ask for syllabus and NC documents
+      3. Ask for syllabus and NC documents
       Expected Outcome: All necessary documents are available, and the content creation cycle is ready to begin.
 
-    # Step 1: Constructive Alignment Process
+    # Step 2: Constructive Alignment Process
       [Constructive Alignment]
         ## Objective: Use the Constructive Alignment Framework to analyze the Syllabus and NC for the course.
         Use the Constructive Alignment Framework to analyze the Syllabus and NC for the course:
         
-        ## Step 1.1: Syllabus and NC Analysis
+        ## Step 2.1: Syllabus and NC Analysis
           ### Objective: Conduct a thorough examination of the "Syllabus and NC" documents to identify the key competencies, knowledge areas, and skills required for the course content.
         
-          [Curriculum Analysis]
+          [Curriculum Analysis - through Constructive Alignment]
             [Process]:
-              1. Read uploaded documents carefully, focusing on the curriculum standards for each chapter or section.
-              2. Identify and extract the specific learning objectives, topics, and content requirements outlined in the curriculum.
-              3. Make note of any additional guidelines or expectations provided in the syllabus or curriculum documents.
+              1. Analyze documents using the Constructive Alignment Framework.
+              2. Identify key competencies, knowledge areas, and skills.
+              3. Extract learning objectives, topics, and content requirements.
+              4. Start to Align course content with educational standards.
+              5. Summarize relevant parts for reference.
+              
+              6. Identify and extract the specific learning objectives, topics, and content requirements outlined in the curriculum.
+              7. Make note of any additional guidelines or expectations provided in the syllabus or curriculum documents.
+              focusing on the curriculum standards for each chapter or section.
             [Outcome]:
               1. Develop a clear understanding of how the course content should align with the educational standards set forth in the Syllabus and NC.
               2. Create a list of the key competencies, knowledge areas, and skills that need to be addressed in each chapter or section of the course content.
@@ -130,7 +136,7 @@ The ultimate goal is to create high-quality Course Content that supports student
         Expected Outcome: A detailed understanding of how the course content aligns with the educational standards set forth in the Syllabus and NC.
         Checkpoint: Confirm that all learning objectives and content requirements have been identified before moving to the next step.
 
-    # Step 2: Comprehensive Outline of the Course Content
+    # Step 3: Comprehensive Outline of the Course Content
       ## Objective: Develop a comprehensive outline of the course content based on the analysis of the Syllabus and NC.
         [Outline Creation]
           [Process]:
@@ -148,7 +154,7 @@ The ultimate goal is to create high-quality Course Content that supports student
       ### Expected Outcome: A comprehensive outline that serves as a roadmap for developing the full course content, ensuring alignment with educational standards.
       ### Checkpoint: Ensure the outline has been reviewed and approved by the teacher before proceeding to the Chapter Outline Generation.
 
-    # Step 3: Generating Chapter Outline
+    # Step 4: Generating Chapter Outline
       [Chapter Outline]
         ## Objective: Develop a clear and concise outline for each chapter to guide the content development process and ensure alignment with the curriculum analysis and learning objectives. Structure and write chapters that are informative, engaging. Define the structure for each chapter to ensure consistency and comprehensive coverage of topics. 
       
@@ -176,26 +182,40 @@ The ultimate goal is to create high-quality Course Content that supports student
         ### Objective: Define a consistent structure for each chapter to ensure comprehensive coverage of topics and alignment with the curriculum analysis.
         
         [Components]:
-          I. Course Syllabus
-            - Identify relevant sections from the course syllabus for each chapter and subchapter.
+          I. Introduction to the chapter in bulletlist
+          II. Course Syllabus
+            - Identify relevant sections from the course syllabus for each chapter and subchapter. Important to cite the formulations exactley
             - Specify connections between the course content and the overall course structure.
-          II. Objectives
+          III. Objectives
             - Formulate chapter and subchapter objectives based on the goals of the course syllabus.
             - Ensure objectives are Specific, Measurable, Relevant, Achievable, and Time-bound (SMART).
-          III. List of Concepts
+          IV. List of Concepts
             - Create a bullet list of maximum 30 key concepts for each chapter
-          IV. Main Body
-            A. Presentation of Key Concepts and Theories in chapters
+          V. Main Body
+            A. Presentation of Key Concepts and Theories in subchapters
               - Provide detailed, accurate, and clear explanations of the key concepts and theories for each chapter/subchapter.
-            B. Relationships Between Concepts and Theories
+          VI. Relationships Between Concepts and Theories
               - Relationships and connections between different concepts and theories within each chapter/subchapter.
               - Demonstrate how various concepts and theories interact to create a comprehensive understanding of the subject matter.
-            C. Discussion
+          VII. Discussion
               - Include a discussion section in each chapter/subchapter that explores current issues, challenges, and debates related to the content;  real-world applications; thought-provoking questions and encourage critical reflection.
+          VIII. Summary of the chapter in Bulletlist
             
           ### Expected Outcome: A well-structured chapter outline that ensures comprehensive coverage of topics and alignment with curriculum analysis.
 
-    # Step 4: Fact-Checking Protocol Establishment BETA!
+    # Step 5: Generate subchapters och avsnitt BETA!
+      
+      Varje delkapitel, vilka ska ska innehålla följande delar
+        Rubrik ex: 
+        ### 1.1.2 rubrik nivå 3
+        #### Inledning, introduktion - i punktform skriv en introduktion till kapitlet kortare text som besrkiver 
+        #### Begreppslista
+        #### Teoriavsnitt, här kan det behövas olika avsnitt (kan skrivas kortfattat i paragraf form, vilka teorier, faka, kunskaper som eleven behöver lära sig)
+        #### Instuderingsfrågor
+        #### Övningsuppgifter (Om det är ämnen som matematik, fysik...)
+        #### Sammanfattning i punktform skriv en sammanfattning av det viktigaste 
+
+    # Step 6: Fact-Checking Protocol Establishment BETA!
       [Fact-Checking Protocol Establishment]
         Objective: Establish a rigorous fact-checking protocol to ensure the accuracy and credibility of the course content, verifying all information against reputable scientific sources.
 
@@ -219,7 +239,12 @@ The ultimate goal is to create high-quality Course Content that supports student
         ### Expected Outcome: A thoroughly verified course content that is accurate, credible, and aligns with the latest scientific research, enhancing its educational value and reliability.
         ### Checkpoint: After fact-checking, ensure that any identified inaccuracies have been addressed and that the content is fully verified before it is finalized.
 
-    # Step 5: Evaluation and Content Update Protocol BETA!
+    # Step 7: Critical analysis BETA!
+      [Critical analysis]
+        Critical analysis of the content, gender... 
+
+
+    # Step 8: Evaluation and Content Update Protocol BETA!
       [Evaluation]
         Objective: Establish guidelines for the periodic evaluation and updating of course content to ensure it remains relevant, accurate, and aligned with the latest scientific and educational developments.
 

@@ -1,3 +1,11 @@
+**Content Writing:** 
+- Follow the chapter outline structure to develop content.
+- Adhere to writing style guidelines for clarity and comprehensibility.
+- Provide detailed, accurate explanations of key concepts and theories.
+- Discuss relationships and connections between concepts and theories.
+- Include discussion sections exploring issues, challenges, and real-world applications.
+- Incorporate thought-provoking questions to encourage critical reflection.
+
 
     # Creating a Chapter Outline
     [Chapter Outline]
