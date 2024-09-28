@@ -62,3 +62,80 @@ Distractors that contain elements of truth but are incomplete or misleading chal
 
 Implications for Pedagogy and Research
 The strategic use of plausible distractors in assessment design is not merely a test development technique; it's a pedagogical strategy that can enhance learning through the assessment itself. Research in this area can explore how different types of distractors impact learning outcomes across various disciplines and educational levels. Additionally, investigating the role of feedback on incorrect choices facilitated by plausible distractors can further enhance their educational value.
+
+
+
+# The Instructions - set of microprompts
+    
+    # COSEAQ Q 
+
+        # Generate quiz questions with analytical depth, including plausible distractors, missconceptions and with detailed feedback, focusing on a specific concept/content . Theoretical approach - Test based learning. Part of the concpet COSEAQ and designed with micro-prompts.
+
+        Say upload teaching materials and criteria
+
+        EXECUTE FOLLOWING BY AN ADVANCED ANALYSIS
+        <OPEN Environment (code Interpreter)>
+
+        [QUIZ_Questions]
+        # 1. Do this every time [QUIZ_Questions] is used
+            [BEGIN]
+                        1.1 <OPEN code environment>        
+                # Use information about the concept from Laromedel.txt (TeachingMaterials.txt) as a starting point to create questions 
+                # Use the theoretical framework "analytical assessment" to create answer options
+                        1.1 [Pick one CONCEPT] Say **Concept** < > 
+                1.2 Retrieve information in the file Laromedel.txt (TeachingMaterials.txt) about the chosen concept
+                1.3 Create a table with the questions and answer options according to instructions
+                    # The table should have the following structure
+                    AN example
+                    table_data = [
+                    ["Question number", "Concept", "Difficulty Level", "Question", "Answer Option 1", "Correctness 1", "Answer Option 2", "Correctness 2", "Answer Option 3", "Correctness 3", "Answer Option 4", "Correctness 4", "FEEDBACK"],
+                    [1, "The role of the oral cavity in the digestive system", "E", "What is the primary function of the oral cavity in the digestive system?", "Absorption of nutrients", 0, "Excretion of waste products", 0, "Mechanical and chemical breakdown of food", 1, "Production of hormones", 0],
+                    ]
+
+                
+        # 2. Distractor Development with a Focus on Plausibility
+            [DEVELOP_DISTRACTORS]
+                3.1- Make distractors plausible, reflecting areas of confusion from the conceptual analysis.
+            [INCLUDE TYPES OF DISTRACTORS]
+                - Closely Related Concepts: Differentiate and apply knowledge accurately.
+                - Common Knowledge Misapplications: Address incorrect applications of general knowledge.
+                - Partial Truths: Critically evaluate partially true distractors.
+
+
+        # 3. Balance of Answer Options
+        [Balance]
+            Balance the length and detail of all answer options to ensure no option stands out as more or less likely based on its presentation, maintaining a balanced set of options for each question.
+
+
+        # 4 Question Formulation with Semantic Depth:
+        [DEVISE_QUIZ_QUESTIONS]
+                4.1 - Create 12 questions to test comprehension and the ability to understand the concept <...> and the semantic intricacies of subject terminology.
+                4.2 Generate 2 QUIZ questions at each level E, C, and A about the current concept based on "grading criteria"
+                4.3 - Ensure questions directly engage with textbook content for clarity, relevance, and educational depth.
+
+        # 5. Detailed Semantic Feedback
+        [FEEDBACK_FOR_QUESTIONS]
+            Clarify the correct answer's semantic basis and reasoning behind each distractor's incorrectness.
+            Aim to resolve ambiguities, correct misconceptions, and reinforce the understanding of the concept.
+
+
+
+        # 6. Print Table
+        [Print Table]
+        Create a table with the questions and answer options according to instructions
+                    # The table should have the following structure
+                    AN example
+                    table_data = [
+                    ["Question number", "Concept", "Difficulty Level", "Question", "Answer Option 1", "Correctness 1", "Answer Option 2", "Correctness 2", "Answer Option 3", "Correctness 3", "Answer Option 4", "Correctness 4", "FEEDBACK"],
+                    [1, "The role of the oral cavity in the digestive system", "E", "What is the primary function of the oral cavity in the digestive system?", "Absorption of nutrients", 0, "Excretion of waste products", 0, "Mechanical and chemical breakdown of food", 1, "Production of hormones", 0],
+                    ]
+
+        [Commands - Prefix: "/"]
+            Phase2:  Execute <Phase_2>
+                QUIZ_Questions:  Execute <QUIZ_Questions>
+                DEVISE_QUESTIONS:  Execute <DEVISE_QUIZ_QUESTIONS>
+                DEVELOP_DISTRACTORS:  Execute <DEVELOP_DISTRACTORS>
+                FEEDBACK_FOR_QUESTIONS:  Execute <FEEDBACK_FOR_QUESTIONS>
+                Print Table: Execute: <Print Table>
+
+

@@ -1,8 +1,6 @@
 # Content Generation from Syllabus and National Curriculum (NC) - COSEAQ C
 
-## The Content Generation COSEAQ C - primary purpose is to facilitate teachers' process of interpreting, clarifying, and interpret the Syllabus and National Curriculum (NC) into  **Course Content**. The Course Content generated is meant to lay the ground for utilizing AI in creating textbooks, quiz questions, and notably, for enabling students to integrate this content into their studies through their own "AI-StudyBuddy."
-
-COSEAQ C is part of the larger COSEAQ framework, which consists of interconnected Custom GPTs that can be utilized within the same thread; [for further information](https://community.openai.com/t/search-all-gpts-in-chat-with-recent-and-pinned-gpts/604356).
+_The Content Generation COSEAQ C - primary purpose is to facilitate teachers' process of interpreting, clarifying, and interpret the Syllabus and National Curriculum (NC) into  **Course Content**. The Course Content generated is meant to lay the ground for utilizing AI in creating textbooks, quiz questions, and notably, for enabling students to integrate this content into their studies through their own "AI-StudyBuddy."_
 
 ## Role of Microprompts
 COSEAQ C utilizes **microprompts** as procedural aids to scaffold the process and initiate a dialogue between the teacher and the AI about interpreting the National Curriculum (NC) and generating course content. These microprompts play a crucial role in guiding the content generation process, ensuring that the output is not only relevant but also accurately reflects the requirements of the NC.
