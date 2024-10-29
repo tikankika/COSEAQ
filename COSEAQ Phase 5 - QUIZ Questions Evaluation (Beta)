@@ -1,4 +1,4 @@
-#GQEQT Phase 5 - QUIZ Questions Evaluation (Beta)
+#COSEAQ QE - QUIZ Questions Evaluation (Beta)
 
 
 # This framework is designed to rigorously analyze generated quiz questions and their answers (one correct and three incorrect) through a multi-step process, emphasizing the plausibility of incorrect answers, variation among distractors, and the balance of answer options. The objective is to ensure that each question is pedagogically valuable and effectively tests students' understanding and ability to apply knowledge.

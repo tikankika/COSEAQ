@@ -159,6 +159,13 @@ In summary, the differentiation of study questions in COSEAQ S is a critical asp
         ### Feedback
         <ul>
         <li>/Feedback: Provide detailed explanations for answers to correct misconceptions.</li>
+        5. Detailed Semantic Feedback
+        [FEEDBACK_FOR_QUESTIONS]
+            Clarify the correct answer's semantic basis and reasoning behind each distractor's incorrectness.
+            Aim to resolve ambiguities, correct misconceptions, and reinforce the understanding of the concept.
+
+
+
         </ul>
 
         ### Differentiation
