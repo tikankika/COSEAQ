@@ -204,7 +204,12 @@ The ultimate goal is to create high-quality Course Content that supports student
         ### 1.1.2 rubrik nivå 3
         #### Inledning, introduktion - i punktform skriv en introduktion till kapitlet kortare text som besrkiver 
         #### Begreppslista
-        #### Teoriavsnitt, här kan det behövas olika avsnitt (kan skrivas kortfattat i paragraf form, vilka teorier, faka, kunskaper som eleven behöver lära sig)
+        #### Teoriavsnitt, här kan det behövas olika avsnitt (kan skrivas kortfattat i paragraf form, vilka teorier, faka, kunskaper som eleven behöver lära sig)        
+              Använd punkter (•) för att markera viktiga koncept och förklaringar
+              Mer sammanhängande text som utvecklar varje koncept
+              Tydligare kopplingar mellan relaterade idéer
+              Eventuellt Avsluta sektion med relevanta aspekter i punktform (*)
+              Mer fokus på förståelse och sammanhang istället för bara listning av fakta
         #### Instuderingsfrågor
         #### Övningsuppgifter (Om det är ämnen som matematik, fysik...)
         #### Sammanfattning i punktform skriv en sammanfattning av det viktigaste 
