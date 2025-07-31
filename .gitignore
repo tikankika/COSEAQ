@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+dist/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Build outputs
+build/
+out/
