@@ -117,25 +117,73 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       {
         name: "read_curriculum_file",
         description: "Read a curriculum file (PDF, Word, or text). Requests permission before accessing.",
-        inputSchema: ReadFileSchema,
+        inputSchema: {
+          type: "object",
+          properties: {
+            filepath: {
+              type: "string",
+              description: "Path to the file to read"
+            },
+            requestPermission: {
+              type: "boolean",
+              description: "Whether to request permission before reading",
+              default: true
+            }
+          },
+          required: ["filepath"]
+        },
       },
       {
         name: "list_curriculum_files",
         description: "List files in a directory",
-        inputSchema: ListFilesSchema,
+        inputSchema: {
+          type: "object",
+          properties: {
+            directory: {
+              type: "string",
+              description: "Directory path to list files from"
+            },
+            pattern: {
+              type: "string",
+              description: "File pattern to match (e.g., '*.pdf')",
+              required: false
+            }
+          },
+          required: ["directory"]
+        },
       },
       {
         name: "set_default_curriculum_path",
         description: "Set the default directory for curriculum files",
-        inputSchema: SetDefaultPathSchema,
+        inputSchema: {
+          type: "object",
+          properties: {
+            path: {
+              type: "string",
+              description: "Default directory path for curriculum files"
+            }
+          },
+          required: ["path"]
+        },
       },
       {
         name: "analyze_curriculum",
         description: "Analyze curriculum according to COSEAQ C methodology",
-        inputSchema: z.object({
-          content: z.string().describe("The curriculum content to analyze"),
-          type: z.enum(["syllabus", "national_curriculum"]).describe("Type of document")
-        }),
+        inputSchema: {
+          type: "object",
+          properties: {
+            content: {
+              type: "string",
+              description: "The curriculum content to analyze"
+            },
+            type: {
+              type: "string",
+              enum: ["syllabus", "national_curriculum"],
+              description: "Type of document"
+            }
+          },
+          required: ["content", "type"]
+        },
       },
     ],
   };
