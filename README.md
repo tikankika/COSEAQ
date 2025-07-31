@@ -62,6 +62,8 @@ Operating in alignment with Objective Formulation, this component transforms cur
 - Supporting multiple assessment methods through content design
 - Connecting objectives directly to teaching materials
 
+**🆕 MCP Server Implementation Available**: COSEAQ C now has a Model Context Protocol (MCP) server that enables direct integration with Claude Desktop for AI-powered curriculum analysis. See [mcp-servers/coseaq-c/](mcp-servers/coseaq-c/) for details.
+
 ## 2. Study Question Development: The Core Process
 COSEAQ S (Study Question Developer) builds upon components O and C to bridge basic content with advanced assessment methods.
 
@@ -200,3 +202,33 @@ The framework diverges into two assessment pathways, each building on study ques
    - Optimize resource use
 
 This workflow emphasizes study questions as the foundation for assessment development while implementing systematic refinement processes and structured assessment approaches.
+
+## MCP Server Implementations
+
+### COSEAQ C MCP Server (Available Now)
+The COSEAQ C component now has a Model Context Protocol (MCP) server implementation that enables:
+
+- **Direct File Access**: Read curriculum documents directly from your computer
+- **AI-Powered Analysis**: Collaborative curriculum analysis with Claude
+- **Session Management**: Save and resume your work across sessions
+- **Multi-Format Support**: Process PDF, Word, and text documents
+
+#### Quick Start
+1. Install the MCP server: See [mcp-servers/coseaq-c/README.md](mcp-servers/coseaq-c/README.md)
+2. Configure Claude Desktop with the server
+3. Use `@coseaq-c` in Claude to start analyzing curricula
+
+#### Key Features
+- Interactive teacher-AI collaboration
+- Structured curriculum analysis following COSEAQ methodology
+- Course outline generation with chapter planning
+- Persistent work sessions
+
+### Future MCP Implementations
+Additional COSEAQ components will receive MCP server implementations to enable:
+- COSEAQ O: Objective formulation with AI assistance
+- COSEAQ S: Study question development workflows
+- COSEAQ Q/M/QE: Quiz generation and quality evaluation
+- COSEAQ E/A: Essay assessment design
+
+These implementations will integrate seamlessly with Claude Desktop, providing educators with powerful AI-assisted tools while maintaining pedagogical control and educational integrity.
