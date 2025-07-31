@@ -14,10 +14,11 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 import { createReadStream } from "fs";
-// Dynamic import to avoid pdf-parse initialization issue
-let pdfParse: any;
+import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.mjs";
 import mammoth from "mammoth";
 import chalk from "chalk";
+import { CoseaqSession } from "./coseaq-session.js";
+import { CurriculumAnalyzer } from "./curriculum-analyzer.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,6 +26,10 @@ const __dirname = path.dirname(__filename);
 // File access permissions store
 const filePermissions = new Map<string, boolean>();
 let defaultCurriculumPath: string | null = null;
+
+// Active COSEAQ sessions
+const sessions = new Map<string, CoseaqSession>();
+let currentSessionId: string | null = null;
 
 // Schema for file reading parameters
 const ReadFileSchema = z.object({
@@ -62,13 +67,26 @@ async function checkFilePermission(filepath: string): Promise<boolean> {
 
 // Helper function to read PDF files
 async function readPdfFile(filepath: string): Promise<string> {
-  // Lazy load pdf-parse to avoid initialization issue
-  if (!pdfParse) {
-    pdfParse = (await import("pdf-parse")).default;
+  try {
+    const data = await fs.readFile(filepath);
+    const loadingTask = pdfjsLib.getDocument({ data });
+    const pdf = await loadingTask.promise;
+    
+    let fullText = '';
+    for (let i = 1; i <= pdf.numPages; i++) {
+      const page = await pdf.getPage(i);
+      const textContent = await page.getTextContent();
+      const pageText = textContent.items
+        .map((item: any) => item.str)
+        .join(' ');
+      fullText += pageText + '\n';
+    }
+    
+    return fullText;
+  } catch (error) {
+    console.error('PDF reading error:', error);
+    throw new Error(`Failed to read PDF: ${error instanceof Error ? error.message : String(error)}`);
   }
-  const dataBuffer = await fs.readFile(filepath);
-  const data = await pdfParse(dataBuffer);
-  return data.text;
 }
 
 // Helper function to read Word documents
@@ -185,6 +203,66 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           required: ["content", "type"]
         },
       },
+      {
+        name: "start_session",
+        description: "Start a new COSEAQ-C collaborative session",
+        inputSchema: {
+          type: "object",
+          properties: {
+            subject: {
+              type: "string",
+              description: "Subject area (e.g., Biology, Mathematics)"
+            },
+            gradeLevel: {
+              type: "string",
+              description: "Grade level (e.g., Grade 9, Gymnasium)"
+            }
+          },
+          required: ["subject", "gradeLevel"]
+        },
+      },
+      {
+        name: "review_analysis",
+        description: "Review and modify the curriculum analysis",
+        inputSchema: {
+          type: "object",
+          properties: {
+            modifications: {
+              type: "string",
+              description: "Teacher's modifications or feedback"
+            }
+          },
+          required: ["modifications"]
+        },
+      },
+      {
+        name: "create_outline",
+        description: "Create course outline based on analysis",
+        inputSchema: {
+          type: "object",
+          properties: {
+            preferences: {
+              type: "string",
+              description: "Teacher preferences for outline structure"
+            }
+          },
+          required: []
+        },
+      },
+      {
+        name: "save_session",
+        description: "Save current work session",
+        inputSchema: {
+          type: "object",
+          properties: {
+            name: {
+              type: "string",
+              description: "Name for the saved session"
+            }
+          },
+          required: ["name"]
+        },
+      },
     ],
   };
 });
@@ -283,31 +361,169 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         type: z.enum(["syllabus", "national_curriculum"])
       }).parse(args);
       
-      // Basic curriculum analysis (to be expanded)
-      const analysis = {
-        type,
-        keyCompetencies: [],
-        learningObjectives: [],
-        topics: [],
-        contentRequirements: [],
-      };
-      
-      // Simple keyword extraction (this would be much more sophisticated)
-      const lines = content.split('\n');
-      for (const line of lines) {
-        if (line.toLowerCase().includes('competenc')) {
-          (analysis.keyCompetencies as string[]).push(line.trim());
-        }
-        if (line.toLowerCase().includes('objective') || line.toLowerCase().includes('goal')) {
-          (analysis.learningObjectives as string[]).push(line.trim());
-        }
+      // Get or create current session
+      if (!currentSessionId) {
+        const newSession = new CoseaqSession();
+        currentSessionId = newSession.id;
+        sessions.set(currentSessionId, newSession);
       }
+      
+      const session = sessions.get(currentSessionId)!;
+      
+      // Prepare prompts for AI analysis
+      const prompts = CurriculumAnalyzer.prepareAnalysisPrompts(
+        type === "national_curriculum" ? content : "",
+        type === "syllabus" ? content : ""
+      );
+      
+      // Create basic analysis structure
+      const analysis = CurriculumAnalyzer.createBasicAnalysis(
+        type === "national_curriculum" ? content : "",
+        type === "syllabus" ? content : ""
+      );
+      
+      // Store in session
+      session.setAnalysis(analysis);
       
       return {
         content: [
           {
             type: "text",
-            text: JSON.stringify(analysis, null, 2),
+            text: `📊 **Curriculum Analysis Started**\n\n` +
+                  `**Document Type:** ${type}\n` +
+                  `**Subject:** ${analysis.subject || "To be determined"}\n` +
+                  `**Grade Level:** ${analysis.gradeLevel || "To be determined"}\n\n` +
+                  `**How this works:**\n` +
+                  `1. I've prepared the curriculum for AI analysis\n` +
+                  `2. Claude will analyze it to extract:\n` +
+                  `   • Key competencies and skills\n` +
+                  `   • Learning objectives and goals\n` +
+                  `   • Topics and content structure\n` +
+                  `   • Assessment criteria\n\n` +
+                  `**Your role:**\n` +
+                  `• Review and modify the AI's findings\n` +
+                  `• Add local context and priorities\n` +
+                  `• Guide the course structure\n\n` +
+                  `**To start analysis:** Ask me to analyze the curriculum, and I'll use AI to extract all the key information. Then we'll review it together!`,
+          },
+        ],
+      };
+    }
+
+    case "start_session": {
+      const { subject, gradeLevel } = z.object({
+        subject: z.string(),
+        gradeLevel: z.string()
+      }).parse(args);
+      
+      const session = new CoseaqSession(subject, gradeLevel);
+      currentSessionId = session.id;
+      sessions.set(session.id, session);
+      
+      return {
+        content: [
+          {
+            type: "text",
+            text: `🚀 **COSEAQ-C Session Started**\n\n` +
+                  `**Subject:** ${subject}\n` +
+                  `**Grade Level:** ${gradeLevel}\n` +
+                  `**Session ID:** ${session.id}\n\n` +
+                  `**Next steps:**\n` +
+                  `1. Tell me where your curriculum files are located\n` +
+                  `2. I'll read them (with your permission) and analyze\n` +
+                  `3. We'll discuss findings and create the course structure together\n\n` +
+                  `**Example:** "My files are in /Users/name/Documents/Curriculum/"\n` +
+                  `Or: "Read the biology curriculum at /Desktop/Bio-NC.pdf"`,
+          },
+        ],
+      };
+    }
+
+    case "review_analysis": {
+      const { modifications } = z.object({
+        modifications: z.string()
+      }).parse(args);
+      
+      if (!currentSessionId || !sessions.has(currentSessionId)) {
+        throw new Error("No active session. Start with 'start_session' first.");
+      }
+      
+      const session = sessions.get(currentSessionId)!;
+      session.recordAction("ANALYSIS_REVIEWED", { modifications });
+      
+      return {
+        content: [
+          {
+            type: "text",
+            text: `✅ **Analysis Updated**\n\n` +
+                  `I've noted your feedback: "${modifications}"\n\n` +
+                  `**Current progress:** ${session.getProgress()}\n\n` +
+                  `Ready to create the course outline based on our refined analysis?`,
+          },
+        ],
+      };
+    }
+
+    case "create_outline": {
+      const { preferences } = z.object({
+        preferences: z.string().optional()
+      }).parse(args);
+      
+      if (!currentSessionId || !sessions.has(currentSessionId)) {
+        throw new Error("No active session. Start with 'start_session' first.");
+      }
+      
+      const session = sessions.get(currentSessionId)!;
+      if (!session.curriculumAnalysis) {
+        throw new Error("Please analyze curriculum first.");
+      }
+      
+      // Generate outline suggestion
+      const suggestedOutline = CurriculumAnalyzer.suggestOutline(session.curriculumAnalysis);
+      session.setOutline(suggestedOutline);
+      
+      return {
+        content: [
+          {
+            type: "text",
+            text: `📚 **Course Outline Draft**\n\n` +
+                  `Based on our analysis, here's my suggested structure:\n\n` +
+                  suggestedOutline.chapters.map((ch: any) => 
+                    `**Chapter ${ch.number}: ${ch.title}**\n` +
+                    `   Topics: ${ch.topics.join(', ')}\n` +
+                    `   Est. hours: ${ch.estimatedHours}\n`
+                  ).join('\n') +
+                  `\n**Your preferences noted:** ${preferences || 'None specified'}\n\n` +
+                  `What would you like to adjust? (chapter order, topics, time allocation?)`,
+          },
+        ],
+      };
+    }
+
+    case "save_session": {
+      const { name } = z.object({
+        name: z.string()
+      }).parse(args);
+      
+      if (!currentSessionId || !sessions.has(currentSessionId)) {
+        throw new Error("No active session to save.");
+      }
+      
+      const session = sessions.get(currentSessionId)!;
+      const sessionData = JSON.stringify(session.toJSON(), null, 2);
+      const filename = `coseaq-session-${name.replace(/\s+/g, '-')}-${new Date().toISOString().split('T')[0]}.json`;
+      const filepath = path.join(process.cwd(), filename);
+      
+      await fs.writeFile(filepath, sessionData);
+      
+      return {
+        content: [
+          {
+            type: "text",
+            text: `💾 **Session Saved**\n\n` +
+                  `**File:** ${filename}\n` +
+                  `**Location:** ${filepath}\n\n` +
+                  `You can resume this session later by loading this file.`,
           },
         ],
       };
@@ -350,17 +566,23 @@ server.setRequestHandler(GetPromptRequestSchema, async (request) => {
           role: "user",
           content: {
             type: "text",
-            text: `I want to start the COSEAQ C content generation process. 
+            text: `I want to start the COSEAQ C collaborative process.
 
-My curriculum files are located at: ${curriculumPath}
+**File Access:** I can read curriculum files directly from your computer.
+Default location checked: ${curriculumPath}
 
-Please guide me through:
-1. Uploading and analyzing syllabus and National Curriculum documents
-2. Using the Constructive Alignment Framework
-3. Creating a comprehensive course outline
-4. Generating chapter structures
+**How this works:**
+1. You tell me where your curriculum files are
+2. I read them with your permission
+3. We analyze them together using AI
+4. Collaboratively create the course structure
 
-Let's begin with analyzing the curriculum documents.`,
+**Examples:**
+- "My files are in /Users/name/Teaching/Biology/"
+- "Read the curriculum at /Desktop/NC-Biology.pdf"
+- "List files in /Documents/Curriculum/"
+
+Where are your curriculum documents located?`,
           },
         },
       ],
