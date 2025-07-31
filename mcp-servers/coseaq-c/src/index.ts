@@ -512,7 +512,19 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       const session = sessions.get(currentSessionId)!;
       const sessionData = JSON.stringify(session.toJSON(), null, 2);
       const filename = `coseaq-session-${name.replace(/\s+/g, '-')}-${new Date().toISOString().split('T')[0]}.json`;
-      const filepath = path.join(process.cwd(), filename);
+      
+      // Create sessions directory in user's home directory
+      const homeDir = process.env.HOME || process.env.USERPROFILE || '';
+      const sessionsDir = path.join(homeDir, '.coseaq-sessions');
+      
+      // Ensure directory exists
+      try {
+        await fs.mkdir(sessionsDir, { recursive: true });
+      } catch (error) {
+        // Directory might already exist, that's fine
+      }
+      
+      const filepath = path.join(sessionsDir, filename);
       
       await fs.writeFile(filepath, sessionData);
       
