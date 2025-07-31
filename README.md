@@ -38,6 +38,17 @@ Ultimately, COSEAQ ensures that technology serves educational needs rather than 
 
 #AIED #GenAI #EducationalTechnology #TeachingInnovation
 
+## 🚀 Latest Updates
+
+### COSEAQ-C MCP Server v0.2.0 (2025-07-31)
+The COSEAQ-C component now features a fully functional MCP (Model Context Protocol) server that transforms curriculum documents into course content through genuine AI-powered collaboration:
+
+- **AI Analysis Engine**: Performs structured analysis of curriculum documents, extracting competencies, learning objectives, and suggesting course structures
+- **Dialogue System**: Progressive microprompts guide teachers through context gathering and collaborative interpretation
+- **Enhanced Tools**: New dialogue tools (`start_dialogue`, `continue_dialogue`, `dialogue_status`) enable natural conversation flow
+- **Fixed Critical Issues**: Replaced static placeholder text with actual AI analysis functionality
+
+[Learn more about COSEAQ-C MCP Server →](./mcp-servers/coseaq-c/)
 
 # COSEAQ Framework: Integrated Educational Content Development Workflow
 

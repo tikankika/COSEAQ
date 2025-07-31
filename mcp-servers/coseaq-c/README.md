@@ -156,10 +156,15 @@ Which resonates with your teaching style and student needs?
 ### Core Tools
 - `start_session` - Initialize a collaborative planning session
 - `read_curriculum_file` - Access curriculum documents (with permission)
-- `analyze_curriculum` - Interpret requirements with AI assistance
+- `analyze_curriculum` - **NEW: Performs actual AI analysis** of curriculum documents
 - `create_outline` - Design course structure collaboratively
 - `review_analysis` - Refine interpretations based on expertise
 - `save_session` - Preserve work for future reference
+
+### Dialogue Tools (NEW!)
+- `start_dialogue` - Begin guided conversation for context gathering
+- `continue_dialogue` - Progress through microprompts with your responses
+- `dialogue_status` - View summary of decisions and context
 
 ### Coming Soon
 - `generate_artifact` - Create professional planning documents
@@ -212,6 +217,22 @@ MIT License - See [LICENSE](./LICENSE) for details.
 ## 🙏 Acknowledgments
 
 COSEAQ-C was developed through collaboration between educators and AI researchers, with special thanks to the teachers who provided invaluable feedback on the curriculum interpretation process.
+
+## 📝 Changelog
+
+### v0.2.0 (2025-07-31) - Core Functionality Implementation
+- **IMPLEMENTED AI Analysis Engine** - Now performs actual curriculum analysis
+- **IMPLEMENTED Dialogue System** - Progressive microprompts for context gathering
+- **Added 3 new dialogue tools** - `start_dialogue`, `continue_dialogue`, `dialogue_status`
+- **Fixed critical issue** - Replaced static text returns with structured analysis
+- **Enhanced session management** - Captures decisions and rationale
+
+### v0.1.0 (2025-07-31) - Initial Release
+- Basic MCP server structure
+- File reading capabilities (PDF, Word, text)
+- Session management system
+- Initial tool implementations
+- Claude Desktop integration
 
 ---
 

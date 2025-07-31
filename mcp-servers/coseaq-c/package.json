@@ -1,7 +1,7 @@
 {
   "name": "@tikankika/coseaq-c-mcp",
-  "version": "0.1.0",
-  "description": "MCP server for COSEAQ C - Content Generation from Syllabus and National Curriculum",
+  "version": "0.2.0",
+  "description": "MCP server for COSEAQ C - AI-powered collaborative curriculum analysis and course content generation",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {

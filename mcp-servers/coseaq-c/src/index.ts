@@ -17,8 +17,10 @@ import { createReadStream } from "fs";
 import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.mjs";
 import mammoth from "mammoth";
 import chalk from "chalk";
-import { CoseaqSession } from "./coseaq-session.js";
+import { CoseaqSession, CurriculumAnalysis } from "./coseaq-session.js";
 import { CurriculumAnalyzer } from "./curriculum-analyzer.js";
+import { AIAnalyzer, formatAnalysisForDisplay } from "./ai-analyzer.js";
+import { DialogueManager } from "./dialogue-manager.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -29,6 +31,7 @@ let defaultCurriculumPath: string | null = null;
 
 // Active COSEAQ sessions
 const sessions = new Map<string, CoseaqSession>();
+const dialogueManagers = new Map<string, DialogueManager>();
 let currentSessionId: string | null = null;
 
 // Schema for file reading parameters
@@ -263,6 +266,44 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           required: ["name"]
         },
       },
+      {
+        name: "start_dialogue",
+        description: "Start guided dialogue for collaborative curriculum planning",
+        inputSchema: {
+          type: "object",
+          properties: {
+            sessionId: {
+              type: "string",
+              description: "Session ID to start dialogue for",
+              required: false
+            }
+          },
+          required: []
+        },
+      },
+      {
+        name: "continue_dialogue",
+        description: "Continue the ongoing dialogue with your response",
+        inputSchema: {
+          type: "object",
+          properties: {
+            response: {
+              type: "string",
+              description: "Your response to the current question"
+            }
+          },
+          required: ["response"]
+        },
+      },
+      {
+        name: "dialogue_status",
+        description: "Get current dialogue status and summary",
+        inputSchema: {
+          type: "object",
+          properties: {},
+          required: []
+        },
+      },
     ],
   };
 });
@@ -370,44 +411,72 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       
       const session = sessions.get(currentSessionId)!;
       
-      // Prepare prompts for AI analysis
-      const prompts = CurriculumAnalyzer.prepareAnalysisPrompts(
-        type === "national_curriculum" ? content : "",
-        type === "syllabus" ? content : ""
-      );
+      // Create AI analyzer instance
+      const aiAnalyzer = new AIAnalyzer();
       
-      // Create basic analysis structure
-      const analysis = CurriculumAnalyzer.createBasicAnalysis(
-        type === "national_curriculum" ? content : "",
-        type === "syllabus" ? content : ""
-      );
+      // Perform ACTUAL AI analysis
+      console.error(chalk.blue("🤖 Performing AI analysis of curriculum..."));
       
-      // Store in session
-      session.setAnalysis(analysis);
-      
-      return {
-        content: [
-          {
-            type: "text",
-            text: `📊 **Curriculum Analysis Started**\n\n` +
-                  `**Document Type:** ${type}\n` +
-                  `**Subject:** ${analysis.subject || "To be determined"}\n` +
-                  `**Grade Level:** ${analysis.gradeLevel || "To be determined"}\n\n` +
-                  `**How this works:**\n` +
-                  `1. I've prepared the curriculum for AI analysis\n` +
-                  `2. Claude will analyze it to extract:\n` +
-                  `   • Key competencies and skills\n` +
-                  `   • Learning objectives and goals\n` +
-                  `   • Topics and content structure\n` +
-                  `   • Assessment criteria\n\n` +
-                  `**Your role:**\n` +
-                  `• Review and modify the AI's findings\n` +
-                  `• Add local context and priorities\n` +
-                  `• Guide the course structure\n\n` +
-                  `**To start analysis:** Ask me to analyze the curriculum, and I'll use AI to extract all the key information. Then we'll review it together!`,
-          },
-        ],
-      };
+      try {
+        const structuredAnalysis = await aiAnalyzer.analyzeCurriculum(content, type);
+        
+        // Convert to session format and store
+        const sessionAnalysis: CurriculumAnalysis = {
+          subject: structuredAnalysis.subject,
+          gradeLevel: structuredAnalysis.level,
+          keyCompetencies: structuredAnalysis.competencies.map(c => c.interpretation),
+          learningObjectives: structuredAnalysis.learningObjectives.map(lo => lo.objective),
+          contentRequirements: structuredAnalysis.competencies.flatMap(c => c.knowledgeAreas),
+          assessmentCriteria: structuredAnalysis.learningObjectives.flatMap(lo => lo.measurableCriteria),
+          topics: structuredAnalysis.suggestedChapters.map(ch => ({
+            name: ch.title,
+            objectives: ch.objectives,
+            concepts: ch.keyTopics,
+            skills: [] // Will be populated during chapter planning
+          }))
+        };
+        
+        session.setAnalysis(sessionAnalysis);
+        
+        // Format the analysis for display
+        const formattedAnalysis = formatAnalysisForDisplay(structuredAnalysis);
+        
+        return {
+          content: [
+            {
+              type: "text",
+              text: `📊 **Kursplansanalys Genomförd**\n\n${formattedAnalysis}\n\n` +
+                    `**Nästa steg:**\n` +
+                    `1. Granska analysen - stämmer tolkningen?\n` +
+                    `2. Anpassa till lokala förutsättningar\n` +
+                    `3. Välj struktur för kursen\n\n` +
+                    `Använd \`review_analysis\` för att ge feedback på analysen.`,
+            },
+          ],
+        };
+      } catch (error) {
+        console.error(chalk.red("AI Analysis error:"), error);
+        
+        // Fallback to basic analysis if AI fails
+        const basicAnalysis = CurriculumAnalyzer.createBasicAnalysis(
+          type === "national_curriculum" ? content : "",
+          type === "syllabus" ? content : ""
+        );
+        
+        session.setAnalysis(basicAnalysis);
+        
+        return {
+          content: [
+            {
+              type: "text",
+              text: `⚠️ **AI-analys kunde inte genomföras fullt ut**\n\n` +
+                    `En grundläggande analys har gjorts, men den fullständiga AI-analysen misslyckades.\n` +
+                    `Fel: ${error instanceof Error ? error.message : 'Okänt fel'}\n\n` +
+                    `Du kan fortsätta med manuell planering eller försöka igen senare.`,
+            },
+          ],
+        };
+      }
     }
 
     case "start_session": {
@@ -536,6 +605,109 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                   `**File:** ${filename}\n` +
                   `**Location:** ${filepath}\n\n` +
                   `You can resume this session later by loading this file.`,
+          },
+        ],
+      };
+    }
+
+    case "start_dialogue": {
+      const { sessionId } = z.object({
+        sessionId: z.string().optional()
+      }).parse(args);
+      
+      const activeSessionId = sessionId || currentSessionId;
+      
+      if (!activeSessionId || !sessions.has(activeSessionId)) {
+        return {
+          content: [
+            {
+              type: "text",
+              text: "❌ Ingen aktiv session. Starta först med `start_session`.",
+            },
+          ],
+        };
+      }
+      
+      // Create dialogue manager for session
+      const dialogueManager = new DialogueManager(activeSessionId);
+      dialogueManagers.set(activeSessionId, dialogueManager);
+      
+      // Start dialogue
+      const response = await dialogueManager.startDialogue();
+      
+      return {
+        content: [
+          {
+            type: "text",
+            text: `🎯 **Strukturerad Dialog Startad**\n\n${response.message}\n\n` +
+                  (response.options ? `**Alternativ:**\n${response.options.map((o, i) => `${i+1}. ${o}`).join('\n')}\n\n` : '') +
+                  (response.helpText ? `💡 *${response.helpText}*\n\n` : '') +
+                  `Använd \`continue_dialogue\` för att svara.`,
+          },
+        ],
+      };
+    }
+
+    case "continue_dialogue": {
+      const { response } = z.object({
+        response: z.string()
+      }).parse(args);
+      
+      if (!currentSessionId || !dialogueManagers.has(currentSessionId)) {
+        return {
+          content: [
+            {
+              type: "text",
+              text: "❌ Ingen pågående dialog. Starta med `start_dialogue`.",
+            },
+          ],
+        };
+      }
+      
+      const dialogueManager = dialogueManagers.get(currentSessionId)!;
+      const nextPrompt = await dialogueManager.processResponse(response);
+      
+      return {
+        content: [
+          {
+            type: "text",
+            text: `✅ Svar registrerat: "${response}"\n\n` +
+                  `${nextPrompt.message}\n\n` +
+                  (nextPrompt.options ? `**Alternativ:**\n${nextPrompt.options.map((o, i) => `${i+1}. ${o}`).join('\n')}\n\n` : '') +
+                  (nextPrompt.helpText ? `💡 *${nextPrompt.helpText}*\n\n` : '') +
+                  (nextPrompt.nextStep === 'complete' ? 
+                    `Dialog komplett! Använd \`dialogue_status\` för sammanfattning.` :
+                    `Använd \`continue_dialogue\` för att fortsätta.`),
+          },
+        ],
+      };
+    }
+
+    case "dialogue_status": {
+      if (!currentSessionId || !dialogueManagers.has(currentSessionId)) {
+        return {
+          content: [
+            {
+              type: "text",
+              text: "❌ Ingen aktiv dialog.",
+            },
+          ],
+        };
+      }
+      
+      const dialogueManager = dialogueManagers.get(currentSessionId)!;
+      const state = dialogueManager.getState();
+      const summary = dialogueManager.getSummary();
+      
+      return {
+        content: [
+          {
+            type: "text",
+            text: `📊 **Dialog Status**\n\n` +
+                  `**Fas:** ${state.currentPhase}\n` +
+                  `**Steg:** ${state.currentStep}\n` +
+                  `**Antal beslut:** ${state.decisions.length}\n\n` +
+                  `${summary}`,
           },
         ],
       };
