@@ -14,7 +14,8 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 import { createReadStream } from "fs";
-import pdf from "pdf-parse";
+// Dynamic import to avoid pdf-parse initialization issue
+let pdfParse: any;
 import mammoth from "mammoth";
 import chalk from "chalk";
 
@@ -61,8 +62,12 @@ async function checkFilePermission(filepath: string): Promise<boolean> {
 
 // Helper function to read PDF files
 async function readPdfFile(filepath: string): Promise<string> {
+  // Lazy load pdf-parse to avoid initialization issue
+  if (!pdfParse) {
+    pdfParse = (await import("pdf-parse")).default;
+  }
   const dataBuffer = await fs.readFile(filepath);
-  const data = await pdf(dataBuffer);
+  const data = await pdfParse(dataBuffer);
   return data.text;
 }
 
