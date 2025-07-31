@@ -243,10 +243,10 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       const lines = content.split('\n');
       for (const line of lines) {
         if (line.toLowerCase().includes('competenc')) {
-          analysis.keyCompetencies.push(line.trim());
+          (analysis.keyCompetencies as string[]).push(line.trim());
         }
         if (line.toLowerCase().includes('objective') || line.toLowerCase().includes('goal')) {
-          analysis.learningObjectives.push(line.trim());
+          (analysis.learningObjectives as string[]).push(line.trim());
         }
       }
       
